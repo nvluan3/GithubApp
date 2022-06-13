@@ -1,0 +1,10 @@
+=====
+NOTES
+=====
+1. Do not restart if prompted.
+-  Exit EasyBCDPortable first, then restart manually.
+2. EasyBCD cannot run from a network drive.
+3. Some functions can only be accomplished in DOS, Safe Mode, or Offline..
+   all of which are not supported by PortableApps.
+4. Windows XP, by default does not have a bootloader.
+-  If you prefer it, you'll have to download it and install it.
