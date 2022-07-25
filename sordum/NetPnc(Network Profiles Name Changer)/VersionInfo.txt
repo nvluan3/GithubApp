@@ -1,0 +1,43 @@
+Author: BlueLife , Velociraptor
+www.sordum.org
+
+[###################]--Network Profile Name Changer v1.3--[###################]
+
+(Tuesday, March 22, 2022)
+------------
+Changelog:
+
+1.[FIXED] - After a Network Profile has been deleted, some Values leaves in a registry key
+2.[ADDED] - Language support
+3.[ADDED] - Windows Vista support
+4.[ADDED] - Some Improvements in coding
+
+[###################]--Network Profile Name Changer v1.2--[###################]
+
+(Monday, 20 September 2021)
+------------
+Changelog:
+
+1.[ADDED] - Delete a Network Profile via Context menu
+2.[ADDED] - Changing a Network Profile to Public Or Private via Context menu
+3.[ADDED] - Open With Registry Editor Context menu Option
+4.[ADDED] - Rename a Network Profile via Context menu
+5.[ADDED] - Some code improvements
+
+[###################]--Network Profile Name Changer v1.1--[###################]
+
+(Friday, 27 August 2021)
+------------
+Changelog:
+
+1.[ADDED] - Show All Network Profile Names feature
+2.[ADDED] - Delete Network Profile Names feature
+3.[ADDED] - Double click one of the Network Profile name on the list to rename it
+7.[FIXED] - GUI is too small
+
+
+[###################]--Network Profile Name Changer v1.0--[###################]
+
+(Sunday, 22 March 2020)
+------------
+First release, A small portable Freeware tool "Network Profile Name Changer" can help you to quickly rename your Active network Profile
