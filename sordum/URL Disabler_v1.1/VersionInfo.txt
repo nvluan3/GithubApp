@@ -1,0 +1,18 @@
+Author: BlueLife , Velociraptor
+www.sordum.org
+
+[###################]--URL Disabler v1.1--[###################]
+
+(Friday, 29 April 2022)
+------------
+Changelog:
+
+1.[FIXED] - White List mode Doesn't work in Google Chrome version 101 and later
+2.[ADDED] - Don't show this dialog again check box has been added to the message box on the save button
+3.[ADDED] - Some code improvements
+
+[###################]--URL Disabler v1.0--[###################]
+
+(Tuesday, 6 October 2020)
+------------------------
+URL Disabler is a Portable (it requires no installation) and freeware to simplify the URL blocking process for Google Chrome , Firefox and Chromium EDGE users.
