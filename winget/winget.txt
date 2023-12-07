@@ -1,0 +1,49 @@
+https://winget.run/search?query=office
+https://winstall.app/
+powershell
+App Installer (Microsoft store)
+winget install ffmpeg
+winget install --id Git.Git -e --source winget
+winget install -e --id Microsoft.VisualStudioCode
+winget install -e --id Python.Python.3
+winget install -e --id VideoLAN.VLC
+winget install -e --id Aegisub.Aegisub
+winget install -e --id WinDirStat.WinDirStat
+winget install -e --id Zoom.Zoom
+winget install -e --id Notepad++.Notepad++
+winget install -e --id Google.Chrome
+winget install -e --id VNGCorp.Zalo
+Thường sử dụng
+winget install -e --id QL-Win.QuickLook
+winget install -e --id 7zip.7zip.Alpha.exe
+winget install -e --id RARLab.WinRAR
+winget install -e --id UniKey.UniKey
+winget install -e --id M2Team.NanaZip
+powershell winget install -e --id RARLab.WinRAR
+winget install -e --id SumatraPDF.SumatraPDF
+winget install -e --id Adobe.Acrobat.Reader.64-bit
+winget install -e --id Foxit.FoxitReader
+winget install -e --id QuestSoft.QTranslate
+winget install --id=SoftDeluxe.FreeDownloadManager  -e
+--
+winget install Microsoft.PowerToys -s winget
+winget install -e --id Microsoft.Skype
+winget install -e --id PuTTY.PuTTY
+winget install -e --id TimKosse.FileZilla.Client
+winget install -e --id Google.Drive
+winget install -e --id CrystalDewWorld.CrystalDiskInfo.KureiKeiEdition
+winget install -e --id CrystalDewWorld.CrystalDiskMark.ShizukuEdition
+winget install -e --id Lexikos.AutoHotkey
+winget install -e --id Rufus.Rufus
+winget install -e --id Microsoft.OfficeDeploymentTool
+winget install -e --id Postman.Postman
+winget install -e --id MiniTool.PartitionWizard.Free
+winget install -e --id JAMSoftware.Ultrasearch
+winget install -e --id qBittorrent.qBittorrent
+winget install -e --id Audacity.Audacity
+
+winget install -e --id PowerSoftware.AnyBurn
+winget install -e --id DucFabulous.UltraViewer
+--
+Phần  download
+winget install --id=subhra74.XtremeDownloadManager  -e
