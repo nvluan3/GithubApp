@@ -1,0 +1,8 @@
+﻿[2024-12-31 02:23:09.092] [info   ] [DULib      ] [18516:12724] [3273A3:  38] [24.2.5234.0] [UpdateManager.cpp] [38] DriverUpdater::UpdateManager::UpdateManager: Initialize Update Engine
+[2024-12-31 02:23:22.584] [info   ] [DULib      ] [18516:18136] [CEF02C:1416] [24.2.5234.0] [DriverUpdater.cpp] [1416] DriverUpdater::DriverUpdaterImpl::logTask: Creating new SCAN Task
+[2024-12-31 02:23:22.604] [info   ] [DULib      ] [18516:12176] [CEF02C:2239] [24.2.5234.0] [DriverUpdater.cpp] [2239] DriverUpdater::DriverUpdaterImpl::Scan: Starting Scan
+[2024-12-31 02:23:28.603] [info   ] [DULib      ] [18516:12176] [CEF02C:2277] [24.2.5234.0] [DriverUpdater.cpp] [2277] DriverUpdater::DriverUpdaterImpl::Scan: We found 53 Devices on your system.
+[2024-12-31 02:23:29.005] [info   ] [DULib      ] [18516:12176] [48668A:1789] [24.2.5234.0] [Device.cpp] [1789] DriverUpdater::Device::GetDriverInt: Active driver not found, trying to set the installed driver flag for a driver in the device: AF8D3781F75524B58D46C378ED869A8A30D5CB575ADB6E3C638EF966D5EF1072
+[2024-12-31 02:23:29.005] [info   ] [DULib      ] [18516:12176] [48668A: 371] [24.2.5234.0] [Device.cpp] [371] DriverUpdater::Device::SetInstalledDriverFlag: Setting DNF_INSTALLEDDRIVER flag for driver: MSPORTS.INF|10.0.26100.1150|12795321600
+[2024-12-31 02:23:29.037] [info   ] [DULib      ] [18516:12176] [CEF02C:2297] [24.2.5234.0] [DriverUpdater.cpp] [2298] DriverUpdater::DriverUpdaterImpl::Scan: For your computer 245 related drivers are available - 10 are newer
+[2024-12-31 02:23:29.037] [info   ] [DULib      ] [18516:12176] [CEF02C:2299] [24.2.5234.0] [DriverUpdater.cpp] [2299] DriverUpdater::DriverUpdaterImpl::Scan: 0 drivers are vulnerable

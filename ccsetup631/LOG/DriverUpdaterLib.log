@@ -1,0 +1,36 @@
+﻿[2024-12-31 02:23:09.059] [info   ] [settings   ] [18516:12724] [9C0E0D: 405] paths.ini_store configuration is empty, settings ini store folder to asw::instup::GetDataDirectory.
+[2024-12-31 02:23:09.059] [info   ] [files      ] [18516:12724] [BA3800: 221] watch task for C:\Users\nvluan3\Downloads\ccsetup631\\Setup started
+[2024-12-31 02:23:09.073] [warning] [ini_access ] [18516:12724] [458A42: 187] failed to read ini file C:\Users\nvluan3\Downloads\ccsetup631\usercfg.ini
+                                                                              Exception: couldn't open file
+                                                                              Code: 0x00000002 (2)
+[2024-12-31 02:23:09.073] [info   ] [files      ] [18516:12724] [BA3800: 221] watch task for C:\Users\nvluan3\Downloads\ccsetup631 started
+[2024-12-31 02:23:09.073] [info   ] [files      ] [18516:12724] [BA3800: 141] watch task termination for C:\Users\nvluan3\Downloads\ccsetup631 requested
+[2024-12-31 02:23:09.073] [info   ] [files      ] [18516:12724] [BA3800: 157] watch task for C:\Users\nvluan3\Downloads\ccsetup631 gracefully terminated
+[2024-12-31 02:23:09.073] [info   ] [files      ] [18516:12724] [BA3800: 221] watch task for C:\Users\nvluan3\Downloads\ccsetup631\Setup started
+[2024-12-31 02:23:09.073] [info   ] [files      ] [18516:12724] [BA3800: 141] watch task termination for C:\Users\nvluan3\Downloads\ccsetup631\\Setup requested
+[2024-12-31 02:23:09.073] [info   ] [files      ] [18516:12724] [BA3800: 157] watch task for C:\Users\nvluan3\Downloads\ccsetup631\\Setup gracefully terminated
+[2024-12-31 02:23:09.073] [warning] [ini_access ] [18516:12724] [458A42: 187] failed to read ini file C:\Users\nvluan3\Downloads\ccsetup631\Data\settings.ini
+                                                                              Exception: couldn't open file
+                                                                              Code: 0x00000002 (2)
+[2024-12-31 02:23:09.077] [info   ] [files      ] [18516:12724] [BA3800: 221] watch task for C:\Users\nvluan3\Downloads\ccsetup631\Data started
+[2024-12-31 02:23:09.077] [warning] [ini_access ] [18516:12724] [458A42: 187] failed to read ini file C:\Users\nvluan3\Downloads\ccsetup631\Data\usercfg.ini
+                                                                              Exception: couldn't open file
+                                                                              Code: 0x00000002 (2)
+[2024-12-31 02:23:09.081] [info   ] [lic_setting] [18516:12724] [50D22A: 203] ~tPQzep/eJJTI5aFsrQ5d07imDDOf1CSByOyzPr8fRsqz7l9Qv+9wx8LnqTm6CEDLs7EcZ86VKYTN7qciuxkBxrK5UzO/9Aa3m6ulP78YAca+uBpykt44ycLkqw==
+[2024-12-31 02:23:09.088] [warning] [Burger     ] [18516:12724] [1F2380: 178] [24.2.5234.0] [BurgerReporter.cpp] [178] asw::standalone_svc::BurgerReporter::RegisterRPC: Could not get RPC.
+[2024-12-31 02:23:09.088] [error  ] [Burger     ] [18516:12724] [1F2380: 258] [24.2.5234.0] [BurgerReporter.cpp] [258] asw::standalone_svc::BurgerReporter::BurgerSwitch: Could not read property BURGER_SETTINGS_PANCAKE_HOSTNAME (0x00000003)
+[2024-12-31 02:23:09.088] [warning] [Burger     ] [18516:12724] [1F2380: 261] [24.2.5234.0] [BurgerReporter.cpp] [261] asw::standalone_svc::BurgerReporter::BurgerSwitch: Analytics (Burger.v4) disabled (hostname: )
+[2024-12-31 02:23:09.088] [error  ] [Burger     ] [18516:12724] [1F2380: 258] [24.2.5234.0] [BurgerReporter.cpp] [258] asw::standalone_svc::BurgerReporter::BurgerSwitch: Could not read property BURGER_SETTINGS_PANCAKE_HOSTNAME (0x00000003)
+[2024-12-31 02:23:09.088] [warning] [Burger     ] [18516:12724] [1F2380: 261] [24.2.5234.0] [BurgerReporter.cpp] [261] asw::standalone_svc::BurgerReporter::BurgerSwitch: Analytics (Burger.v4) disabled (hostname: )
+[2024-12-31 02:23:09.088] [warning] [Burger     ] [18516:12724] [1F2380: 285] [24.2.5234.0] [BurgerReporter.cpp] [285] asw::standalone_svc::BurgerReporter::GASwitch: Property GDPR_THIRD_PARTY_ANALYTICS_ENABLED not found, set default value
+[2024-12-31 02:23:09.088] [warning] [Burger     ] [18516:12724] [1F2380: 178] [24.2.5234.0] [BurgerReporter.cpp] [178] asw::standalone_svc::BurgerReporter::RegisterRPC: Could not get RPC.
+[2024-12-31 02:23:09.092] [warning] [files      ] [18516: 6564] [BA3800: 255] C:\Users\nvluan3\Downloads\ccsetup631\Setup overlapped IO failed, error: 995.
+[2024-12-31 02:24:09.083] [warning] [ini_access ] [18516:14608] [458A42: 187] failed to read ini file C:\Users\nvluan3\Downloads\ccsetup631\Data\burger_client.ini
+                                                                              Exception: couldn't open file
+                                                                              Code: 0x00000002 (2)
+[2024-12-31 02:27:17.529] [info   ] [files      ] [18516:15672] [BA3800: 141] watch task termination for C:\Users\nvluan3\Downloads\ccsetup631\Setup requested
+[2024-12-31 02:27:17.529] [info   ] [files      ] [18516:15672] [BA3800: 157] watch task for C:\Users\nvluan3\Downloads\ccsetup631\Setup gracefully terminated
+[2024-12-31 02:27:17.529] [info   ] [files      ] [18516:15672] [BA3800: 141] watch task termination for C:\Users\nvluan3\Downloads\ccsetup631\Data requested
+[2024-12-31 02:27:17.529] [info   ] [files      ] [18516:15672] [BA3800: 157] watch task for C:\Users\nvluan3\Downloads\ccsetup631\Data gracefully terminated
+[2024-12-31 02:27:17.641] [info   ] [log_module ] [18516:15672] [C72B9D:  31] LogModule is going to be destroyed.
+[2024-12-31 02:27:17.641] [info   ] [log_module ] [18516:15672] [C72B9D:  32] =====================================================================================================================

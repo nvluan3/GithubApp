@@ -1,0 +1,11 @@
+﻿[2024-12-31 02:23:15.881] [info   ] [sw_updater ] [18516:19924] [98DA86:  96] asw::su_controller::detail::SUControllerModule::OnScanStateUpdated
+[2024-12-31 02:23:15.881] [info   ] [sw_updater ] [18516:19924] [98DA86:  96] asw::su_controller::detail::SUControllerModule::OnDetectionsUpdated
+[2024-12-31 02:23:15.881] [info   ] [sw_updater ] [18516:19924] [98DA86: 105] asw::su_controller::detail::SUControllerModule::StartScan:S-1-5-21-2207473928-3802511405-224430898-1002,Nothing,Manual,,nullopt
+[2024-12-31 02:23:22.584] [info   ] [sw_updater ] [18516:18136] [98DA86: 105] asw::su_controller::detail::SUControllerModule::GetDetections:S-1-5-21-2207473928-3802511405-224430898-1002
+[2024-12-31 02:23:22.584] [info   ] [sw_updater ] [18516:17392] [1C62F9:  48] Cleaning up data directory: C:\Users\nvluan3\Downloads\ccsetup631\Data\su_data
+[2024-12-31 02:23:22.584] [info   ] [sw_updater ] [18516:17392] [1C62F9:  62] Data directory successfully cleaned
+[2024-12-31 02:23:37.747] [info   ] [sw_updater ] [18516:15672] [98DA86: 105] asw::su_controller::detail::SUControllerModule::GetDetections:S-1-5-21-2207473928-3802511405-224430898-1002
+[2024-12-31 02:23:37.747] [info   ] [sw_updater ] [18516:15672] [98DA86: 105] asw::su_controller::detail::SUControllerModule::GetScanState:S-1-5-21-2207473928-3802511405-224430898-1002
+[2024-12-31 02:23:37.763] [info   ] [sw_updater ] [18516:15672] [98DA86: 105] asw::su_controller::detail::SUControllerModule::GetScanState:S-1-5-21-2207473928-3802511405-224430898-1002
+[2024-12-31 02:23:37.763] [info   ] [sw_updater ] [18516:15672] [98DA86: 105] asw::su_controller::detail::SUControllerModule::GetScanState:S-1-5-21-2207473928-3802511405-224430898-1002
+[2024-12-31 02:23:37.763] [info   ] [sw_updater ] [18516:15672] [98DA86: 105] asw::su_controller::detail::SUControllerModule::GetDetections:S-1-5-21-2207473928-3802511405-224430898-1002
