@@ -1,0 +1,48 @@
+Please note that there is an installer on my site which will do all of this for you:
+
+http://www.pretentiousname.com/adobe_pdf_x64_fix/index.html
+
+These instructions are provided for people who would rather install by hand
+or wish to automate the installation.
+
+*** 32-bit users: See notes at the bottom. ***
+
+There should be three files:
+
+	Thumbridge.exe
+	Thumbridge32.dll
+	Thumbridge64.dll
+
+Copy all three to:
+
+	C:\Program Files (x86)\Adobe Reader 64-bit fixes
+	
+You may use a different location if you wish, but it must be visible to 32-bit code.
+
+In particular, do NOT use "C:\Program Files".
+
+You then need to register the three files. Register the EXE first:
+
+	Thumbridge.exe /regserver
+	
+Then register the two DLLs:
+
+	regsvr32.exe /s Thumbridge32.dll
+	regsvr32.exe /s Thumbridge64.dll
+
+To UNINSTALL:
+
+	Thumbridge.exe /unregserver
+	regsvr32.exe /u /s Thumbridge32.dll
+	regsvr32.exe /u /s Thumbridge64.dll
+
+and then delete the files.
+
+
+*** 32-bit users: ***
+
+  You may want to install the thumbnail bridge on 32-bit machines as well,
+  just to get rid of the white border that Adobe Reader puts around thumbnails.
+
+  To do that, the steps are the same as above except that you can/should use
+  "C:\Program Files" and you should ignore the Thumbridge64.dll file.
