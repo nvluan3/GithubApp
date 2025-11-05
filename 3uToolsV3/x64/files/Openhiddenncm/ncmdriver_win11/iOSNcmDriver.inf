@@ -1,0 +1,93 @@
+﻿;
+; UsbNcm.inf
+;
+
+[Version]
+Signature="$WINDOWS NT$"
+Class=Net
+ClassGUID={4d36e972-e325-11ce-bfc1-08002be10318}
+Provider=%ManufacturerName%
+CatalogFile=iOSNcmDriver.cat
+DriverVer = 02/26/2024,10.26.26.872
+PnpLockDown=1
+
+[SourceDisksNames]
+1 = %DiskName%,,,""
+
+[SourceDisksFiles]
+iOSNcmDriver.sys  = 1,,
+
+;*****************************************
+; Install Section
+;*****************************************
+
+[Manufacturer]
+%ManufacturerName%=Standard,NTamd64.10.0...22000
+
+[Standard.NTamd64.10.0...22000]
+%iOSNcmDriver.DeviceDesc%=iOSNcmDriver_Device, USB\VID_05ac&PID_12A8&MI_05
+%iOSNcmDriver.DeviceDesc%=iOSNcmDriver_Device, USB\VID_05ac&PID_12AB&MI_05
+
+[iOSNcmDriver_Device.NT]
+AddReg=iOSNcmDriver_AddReg
+CopyFiles=Drivers_Dir
+BusType=15           ; PNPBus
+Characteristics=0x84 ; NCF_PHYSICAL
+*IfType=6            ; IF_TYPE_ETHERNET_CSMACD
+*MediaType=0         ; NdisMedium802_3
+*PhysicalMediaType=0 ; NdisPhysicalMediumUnspecified
+*IfConnectorPresent = 1  ; true
+*ConnectionType     = 1  ; NET_IF_CONNECTION_DEDICATED
+*DirectionType      = 0  ; NET_IF_DIRECTION_SENDRECEIVE
+*AccessType         = 2  ; NET_IF_ACCESS_BROADCAST
+*HardwareLoopback   = 0  ; false
+
+[Drivers_Dir]
+iOSNcmDriver.sys
+
+[iOSNcmDriver_AddReg]
+HKR, Ndi,            Service,    0, "iOSNcmDriver"
+HKR, Ndi\Interfaces, UpperRange, 0, "ndis5"
+HKR, Ndi\Interfaces, LowerRange, 0, "ethernet"
+
+HKR, Ndi\params\NetworkAddress, ParamDesc, 0, %NetworkAddress.Title%
+HKR, Ndi\params\NetworkAddress, Type,      0, "edit"
+HKR, Ndi\params\NetworkAddress, LimitText, 0, "12"
+HKR, Ndi\params\NetworkAddress, UpperCase, 0, "1"
+HKR, Ndi\params\NetworkAddress, Optional,  0, "1"
+
+;-------------- Service installation
+[iOSNcmDriver_Device.NT.Services]
+AddService = iOSNcmDriver,%SPSVCINST_ASSOCSERVICE%, iOSNcmDriver_Service_Inst
+
+; -------------- iOSNcmDriver driver install sections
+[iOSNcmDriver_Service_Inst]
+DisplayName    = %iOSNcmDriver.SVCDESC%
+ServiceType    = 1               ; SERVICE_KERNEL_DRIVER
+StartType      = 3               ; SERVICE_DEMAND_START
+ErrorControl   = 1               ; SERVICE_ERROR_NORMAL
+ServiceBinary  = %12%\iOSNcmDriver.sys
+
+;
+;--- iOSNcmDriver_Device Coinstaller installation ------
+;
+
+[DestinationDirs]
+DefaultDestDir = 12
+
+[iOSNcmDriver_Device.NT.Wdf]
+KmdfService =  iOSNcmDriver, iOSNcmDriver_wdfsect
+
+[iOSNcmDriver_wdfsect]
+KmdfLibraryVersion = 1.15
+
+[Strings]
+SPSVCINST_ASSOCSERVICE= 0x00000002
+ClassName="Universal Serial Bus devices"
+DiskName = "iOS UsbNcm Host Installation Disk"
+iOSNcmDriver.DeviceDesc = "iOS UsbNcm Network"
+iOSNcmDriver.SVCDESC = "iOS UsbNcm Host Service"
+REG_MULTI_SZ = 0x00010000
+
+ManufacturerName="waip"
+NetworkAddress.Title="Network Address"

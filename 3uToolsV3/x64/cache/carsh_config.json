@@ -1,0 +1,170 @@
+{
+	"upload" : false,	
+	"errorTable" : 
+	[
+		{
+			"keyword" : "panic(cpu",
+			"codename" : "Panic CPU x caller",
+			"diagnosis" : "Problem connecting CPU and peripherals",
+			"proposal" : "You can check them in repair stores or replace related accessories "
+		},
+		{
+			"keyword" : "apcie[0:s3e]",
+			"codename" : "S3E",
+			"diagnosis" : "Hard disk problem",
+			"proposal" : "You can check them in repair stores or replace related accessories"
+		},
+		{
+			"keyword" : "kernel data abort",
+			"codename" : "CPU",
+			"diagnosis" : "CPU problem (8P will be the motherboard problem)",
+			"proposal" : "You can check them in repair stores or replace related accessories"
+		},
+		{
+			"keyword" : "AppleBCMWLAN",
+			"codename" : "WiFi",
+			"diagnosis" : "Problems with Wifi module",
+			"proposal" : "You can check them in repair stores or replace related accessories"
+		},
+		{
+			"keyword" : "prox",
+			"codename" : "Sensor element",
+			"diagnosis" : "Problems with sensing elements",
+			"proposal" : "You can check them in repair stores or replace related accessories"
+		},
+		{
+			"keyword" : "tristar",
+			"codename" : "U2 chip",
+			"diagnosis" : "Problem with U2 chip",
+			"proposal" : "You can check them in repair stores or replace related accessories"
+		},
+		{
+			"keyword" : "SEP panic",
+			"codename" : "SEP",
+			"diagnosis" : "Problem with logic chips",
+			"proposal" : "You can check them in repair stores or replace related accessories"
+		},
+		{
+			"keyword" : "Baseband",
+			"codename" : "Baseband",
+			"diagnosis" : "Baseband Problems",
+			"proposal" : "You can check them in repair stores or replace related accessories"
+		},
+		{
+			"keyword" : "SEP ROM boot panic",
+			"codename" : "SEP",
+			"diagnosis" : "Restart caused by logic chips",
+			"proposal" : "You can check them in repair stores or replace related accessories"
+		},
+		{
+			"keyword" : "WDT timeout",
+			"codename" : "WDT",
+			"diagnosis" : "Restart due to no data on the battery or no data inserted at the end",
+			"proposal" : "You can check them in repair stores or replace related accessories"
+		},
+		{
+			"keyword" : "AMCC error",
+			"codename" : "AMCC",
+			"diagnosis" : "Restart due to light perception",
+			"proposal" : "You can check them in repair stores or replace related accessories"
+		},
+		{
+			"keyword" : "AppleSocHot hot",
+			"codename" : "CPU",
+			"diagnosis" : "Restart due to excessive CPU temperature",
+			"proposal" : "You can check them in repair stores or replace related accessories"
+		},
+		{
+			"keyword" : "attempting to forcibly halt CPU cpu 0 failed to halt with error",
+			"codename" : "CPU",
+			"diagnosis" : "CPU Virtual Soldering",
+			"proposal" : "You can check them in repair stores or replace related accessories"
+		},
+		{
+			"keyword" : "power failed to transition to state",
+			"codename" : "CPU",
+			"diagnosis" : "CPU power supply problem",
+			"proposal" : "You can check them in repair stores or replace related accessories"
+		},
+		{
+			"keyword" : "dart-apcie1",
+			"codename" : "S3E",
+			"diagnosis" : "Hard disk communication problems (6th generation and above models)",
+			"proposal" : "You can check them in repair stores or replace related accessories"
+		},
+		{
+			"keyword" : "s3e",
+			"codename" : "S3E",
+			"diagnosis" : "Hard disk problem",
+			"proposal" : "You can check them in repair stores or replace related accessories"
+		},
+		{
+			"keyword" : "nc-postnand link cmd time out",
+			"codename" : "S3E",
+			"diagnosis" : "Hard disk problem",
+			"proposal" : "You can check them in repair stores or replace related accessories"
+		},
+		{
+			"keyword" : "AOP DATA ABORT",
+			"codename" : "AOP",
+			"diagnosis" : "CPU communication or system problem",
+			"proposal" : "You can check them in repair stores or replace related accessories"
+		},
+		{
+			"keyword" : "AOP PANIC",
+			"codename" : "AOP",
+			"diagnosis" : "Distance sensing problem",
+			"proposal" : "You can check them in repair stores or replace related accessories"
+		},
+		{
+			"keyword" : "No pulse on",
+			"codename" : "PULSE",
+			"diagnosis" : "Pulse is not turned on",
+			"proposal" : "You can check them in repair stores or replace related accessories"
+		},
+		{
+			"keyword" : "i2c0-checkbusStatus bus is still in a bad state for device tristar",
+			"codename" : "TRISTAR",
+			"diagnosis" : "The tail plug or tail socket is abnormal",
+			"proposal" : "You can check them in repair stores or replace related accessories"
+		},
+		{
+			"keyword" : "AppleTristar2:could not find system id",
+			"codename" : "TRISTAR",
+			"diagnosis" : "The tail plug or tail socket is abnormal",
+			"proposal" : "You can check them in repair stores or replace related accessories"
+		},
+		{
+			"keyword" : "ApplesmartIO",
+			"codename" : "SmartIO",
+			"diagnosis" : "Firmware problem",
+			"proposal" : "Flash with the latest firmware"
+		},
+		{
+			"keyword" : "PMP NMI FIQ",
+			"codename" : "FIQ",
+			"diagnosis" : "Power Problems",
+			"proposal" : "You can check them in repair stores or replace related accessories"
+		},
+		{
+			"keyword" : "i2c2",
+			"codename" : "I2C",
+			"diagnosis" : "I2C bus problem",
+			"proposal" : "You can check them in repair stores or replace related accessories"
+		},
+		{
+			"keyword" : "i2c3",
+			"codename" : "I2C",
+			"diagnosis" : "I2C bus problem",
+			"proposal" : "You can check them in repair stores or replace related accessories"
+		},
+		{
+			"keyword" : "Firmware fatal",
+			"codename" : "Firmware",
+			"diagnosis" : "Firmware problem",
+			"proposal" : "Flash with the latest firmware"
+		}
+		
+	]
+	
+}

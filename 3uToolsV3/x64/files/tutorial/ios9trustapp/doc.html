@@ -1,0 +1,87 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>信任</title>
+<script src="jquery-1.11.1.min.js"></script>
+<style>
+input,button,a {
+outline:0 none !important; blr:expression(this.onFocus=this.blur());
+} 
+body { margin:0; padding:0; font-family:"Microsoft YaHei"; background:#FFF; }
+a, a:hover { text-decoration:none; }
+.main { width:800px; overflow:hidden; background:#FFF; }
+.title { width:800px; height:96px; }
+.scroll { width:800px; height:300px; overflow:hidden; position:relative; }
+.scroll .btn { width:40px; height:40px; display:block; position:absolute; top:130px; background-repeat:no-repeat; background-position:left top; }
+.scroll .btn.btn-default:hover { background-position:left -40px; }
+.scroll .btn.btn-default:active { background-position:left -80px; }
+.scroll .btn.btn-disable { background-position:left -120px; cursor:default; }
+.scroll .btn.btn-l { left:22px; background-image:url(imgs/iOS9_trust_btn_left.png); }
+.scroll .btn.btn-r { right:22px; background-image:url(imgs/iOS9_trust_btn_right.png); }
+.scroll .xr { width:637px; height:300px; margin:0 auto; overflow:hidden; position:relative; }
+.scroll .xr #xr-img { width:1276px; height:300px; position:absolute; left:0; top:0; background-image:url(imgs/iOS9_trustEN_img.png); background-repeat:no-repeat; background-position:left top; }
+</style>
+</head>
+
+<body>
+<div class="main">
+	<div class="title">
+		<img src="imgs/title_en.jpg" />
+	</div>
+	<div class="scroll">
+		<a class="btn btn-disable btn-l" title="PREV" alt="PREV" id="btn-l" onClick="tp(0)" href="javascript:;"></a>
+		<div class="xr">
+			<div id="xr-img"></div>
+		</div>
+		<a class="btn btn-default btn-r" title="NEXT" alt="NEXT" id="btn-r" onClick="tp(1)" href="javascript:;"></a>
+	</div>
+</div>
+<script>
+var np = 0;
+var timer = null;
+function tp(n) 
+{
+	if(timer != null)
+	{
+		clearInterval(timer);
+		timer = null;
+	}
+	np = n;
+	sp();
+}
+
+function sp()
+{
+	$('#xr-img').animate({
+		left: np * (-637)
+	}, 500, 'swing');
+	//document.getElementById('xr-img').style.left = np * (-654) + 'px'; 
+	if(np)
+	{
+		document.getElementById('btn-l').classList.remove('btn-disable');
+		document.getElementById('btn-l').classList.add('btn-default');
+		document.getElementById('btn-r').classList.add('btn-disable');
+		document.getElementById('btn-r').classList.remove('btn-default');
+	}
+	else
+	{
+		document.getElementById('btn-l').classList.add('btn-disable');
+		document.getElementById('btn-l').classList.remove('btn-default');
+		document.getElementById('btn-r').classList.remove('btn-disable');
+		document.getElementById('btn-r').classList.add('btn-default');
+	}
+}
+function spStart()
+{
+	timer = setInterval(function(){
+		np = !np;
+		sp();
+	}, 5000);
+}
+spStart();
+//右键屏蔽
+function stop(){return false;}document.oncontextmenu=stop;
+</script>
+</body>
+</html>

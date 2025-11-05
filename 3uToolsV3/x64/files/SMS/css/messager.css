@@ -1,0 +1,416 @@
+* {
+    /* 解决屏幕点击闪烁 */
+    -webkit-tap-highlight-color: transparent;
+    /* 禁止圈选 */
+    -moz-user-select: none;
+    -o-user-select: none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    /* 去掉点击时的虚框 */
+    outline-style: none;
+}
+
+body,
+html {
+    -webkit-text-size-adjust: none;
+    overflow-x: hidden;
+}
+
+body {
+    font-size: 14px;
+    background: #f5f5f5;
+    height: 100%;
+    overflow: hidden;
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+}
+
+input {
+    border: 0;
+}
+
+#debug {
+    display: none;
+    z-index: 2;
+    width: 50%;
+    height: 200px;
+    padding: 10px 20px;
+    background: rgba(0, 0, 0, 0.7);
+    overflow-y: scroll;
+    font-size: 12px;
+    color: #FFF;
+    word-break: break-all;
+    position: fixed;
+    right: 0;
+    bottom: 0;
+}
+
+#debug p span {
+    color: #98e165;
+}
+
+#hint {
+    position: relative;
+    top: 50%;
+    margin-top: -15px;
+    display: none;
+}
+
+#hint>p {
+    float: left;
+    position: relative;
+    left: 50%;
+}
+
+#hint>p>span {
+    display: block;
+    height: 30px;
+    line-height: 30px;
+    max-width: 200px;
+    padding: 0 7px;
+    border-radius: 3px;
+    background: rgba(0, 0, 0, 0.7);
+    color: #FFF;
+    font-size: 12px;
+    position: relative;
+    left: -50%;
+}
+
+#msgScroll {
+    width: 7px;
+    height: 100%;
+    min-height: 50px;
+    border-radius: 3.5px;
+    background-color: rgba(0, 0, 0, 0.1);
+    position: fixed;
+    z-index: 2;
+    right: 2px;
+    bottom: 0;
+    display: none;
+}
+
+#content {
+    width: 100%;
+    min-height: 100%;
+    min-width: 400px;
+    overflow: hidden;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+}
+
+#content.group .message:nth-last-child(1) {
+    margin-bottom: 15px;
+}
+
+#content.mt_wx {
+    background: url(../images/weChatLogo.png) no-repeat center center;
+}
+
+#content.mt_sms {
+    background: url(../images/smsLogo.png) no-repeat center center;
+}
+
+#content.mt_qq {
+    background: url(../images/qqLogo.png) no-repeat center center;
+}
+
+#content.mt_tim{
+    background: url(../images/TIMLogo.png) no-repeat center center;
+}
+
+#content.mt_line{
+    background: url(../images/lineLog.png) no-repeat center center;
+}
+
+#loader {
+    width: 150px;
+    height: 30px;
+    line-height: 30px;
+    font-size: 12px;
+    color: #2c90ff;
+    text-align: center;
+    margin: 0 auto;
+    display: none;
+}
+
+#loader img {
+    margin-top: 5px;
+    height: 20px;
+}
+
+.time {
+    height: 19px;
+    padding: 12px 0px;
+    position: relative;
+}
+
+.time>p {
+    float: left;
+    position: relative;
+    left: 50%;
+}
+
+.time>p>span {
+    display: block;
+    height: 19px;
+    line-height: 19px;
+    padding: 0 7px;
+    text-align: center;
+    color: #fff;
+    font-size: 12px;
+    background: #dadada;
+    border-radius: 2px;
+    position: relative;
+    left: -50%;
+}
+
+.message {
+    margin-left: 30px;
+    margin-bottom: 5px;
+    padding-left: 43px;
+    overflow: hidden;
+    position: relative;
+}
+
+.message.self {
+    margin-left: 0;
+    margin-right: 30px;
+    padding-left: 0px;
+    padding-right: 43px;
+}
+
+.message>.face {
+    width: 34px;
+    height: 34px;
+    border-radius: 2px;
+    position: absolute;
+    left: 0;
+    top: 8px;
+}
+
+.message>.face img {
+    width: 100%;
+    height: 100%;
+}
+
+.message.self>.face {
+    left: auto;
+    right: 0;
+}
+
+.message.self>.face,
+#content.private .message>.face {
+    top: 0;
+}
+
+.message>.name {
+    height: 20px;
+    line-height: 20px;
+    color: #b2b2b2;
+    font-size: 12px;
+}
+
+.message.self>.name,
+#content.private .message>.name {
+    display: none;
+}
+
+.message.self,
+#content.private .message {
+    margin-bottom: 15px;
+}
+
+.message>.msg {
+    min-width: 34px;
+    min-height: 34px;
+    float: left;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 3px;
+    position: relative;
+}
+
+.message.self>.msg {
+    float: right;
+}
+
+.message>.msg::after {
+    content: " ";
+    display: block;
+    background: url(../images/zz.png) no-repeat;
+    background-position: left center;
+    width: 14px;
+    height: 14px;
+    position: absolute;
+    left: -7px;
+    top: 10px;
+}
+
+.message.self>.msg::after {
+    left: auto;
+    right: -7px;
+    background-position: right center;
+    border: 0;
+}
+
+.message>.msg.text {
+    max-width: 60%;
+    background: #FFF;
+    color: #232323;
+    word-break: break-all;
+    padding: 7px 10px;
+    line-height: 20px;
+    min-width: 14px;
+    min-height: 20px;
+}
+
+@media screen and (min-width: 1000px) {
+    .message>.msg.text {
+        max-width: 33%;
+    }
+}
+
+.message>.msg.text .btn-copy {
+    display: none;
+    width: 50px;
+    height: 25px;
+    line-height: 25px;
+    text-align: center;
+    color: #666;
+    border: 1px solid #DDD;
+    background: #FFF;
+    border-radius: 3px;
+    margin-top: 3px;
+    position: absolute;
+    right: -60px;
+    top: 0;
+}
+
+.message>.msg.text .btn-copy:hover {
+    background: #F4F4F4;
+}
+
+.message.self>.msg.text .btn-copy {
+    right: auto;
+    left: -60px;
+}
+
+.message:hover>.msg.text .btn-copy {
+    display: block;
+}
+
+.message.self>.msg.text,
+.message.self>.msg.audio {
+    background: #98e165;
+    border: 0;
+}
+
+.message>.msg.image {
+    max-width: 118px;
+    position: relative;
+}
+
+.message>.msg.image::after,
+.message>.msg.video::after {
+    display: none;
+}
+
+.message>.msg.image img,
+.message>.msg.video img {
+    display: block;
+    max-width: 118px;
+    border-radius: 3px;
+}
+
+.message>.msg .link {
+    color: #2c90ff;
+}
+
+.message>.msg .link:hover {
+    text-decoration: underline;
+}
+
+.message>.msg.audio {
+    min-width: 76px;
+    max-width: 280px;
+    background: #FFF;
+    position: relative;
+}
+
+.message>.msg.audio .longtime {
+    color: #999;
+    font-size: 12px;
+    position: absolute;
+    left: calc(100% + 10px);
+    top: 50%;
+    margin-top: -10px;
+}
+
+.message.self>.msg.audio .longtime {
+    left: auto;
+    right: calc(100% + 10px);
+}
+
+.message>.msg.video {
+    position: relative;
+}
+
+.message>.msg.video img {
+    display: block;
+    border-radius: 3px;
+}
+
+.message>.msg.video .longtime {
+    position: absolute;
+    left: 10px;
+    bottom: 10px;
+    color: #FFF;
+    font-size: 12px;
+}
+
+.message.self>.msg.video .longtime {
+    left: auto;
+    right: 10px;
+}
+
+.message>.msg.image,
+.message>.msg.audio,
+.message>.msg.video,
+.message>.msg .link,
+#loader {
+    cursor: pointer;
+}
+
+.icon-audio {
+    display: block;
+    width: 10px;
+    height: 15px;
+    background: url(../images/audio.png) no-repeat;
+    position: absolute;
+    left: 17px;
+    top: 50%;
+    margin-top: -7.5px;
+}
+
+.message.self .icon-audio {
+    background-image: url(../images/audio.self.png);
+    left: auto;
+    right: 17px;
+}
+
+.icon-video {
+    display: block;
+    width: 34px;
+    height: 34px;
+    background: url(../images/video.png);
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-left: -17px;
+    margin-top: -17px;
+}

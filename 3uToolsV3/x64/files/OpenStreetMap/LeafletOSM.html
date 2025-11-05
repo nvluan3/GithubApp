@@ -1,0 +1,314 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+	<title>OSM</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="renderer" content="webkit" />
+	<meta name="force-rendering" content="webkit" />
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1" />
+
+	<link rel="stylesheet" href="./leaflet.css" />
+	<link rel="stylesheet" href="./style.css" />
+	<link rel="stylesheet" href="./style.css" />
+	<style>
+		body {
+			padding: 0;
+			margin: 0;
+		}
+
+		html,
+		body,
+		#map {
+			height: 100%;
+			width: 100%;
+		}
+
+		.search-input {}
+
+		.search-input,
+		.leaflet-control-search {
+			max-width: 400px;
+		}
+
+		.m-SearchBox {
+			width: 310px;
+			height: 38px;
+			background: #FFF;
+			box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+
+			position: absolute;
+			z-index: 1000;
+			bottom: auto;
+			right: auto;
+			top: 30px;
+			left: 10px;
+			clear: both;
+		}
+
+		.m-SearchBox .SearchInput {
+			width: 251px;
+			padding: 0 14px;
+			height: 38px;
+			float: left;
+		}
+
+		.m-SearchBox .SearchInput input {
+			width: 100%;
+			height: 100%;
+			padding-right: 16px;
+			border: none;
+			background: none;
+			outline: none;
+		}
+
+		.m-SearchBox a {
+			display: block;
+			float: right;
+			width: 59px;
+			height: 38px;
+			border: none;
+			background: #FFF url(search.png) no-repeat center center;
+			cursor: pointer;
+			position: relative;
+		}
+
+		.m-SearchBox a:hover {
+			background-color: #eee;
+		}
+
+		.m-SearchList {
+			background: #fff;
+			border-top: 1px solid #e4e6e7;
+			position: absolute;
+			z-index: 1000;
+			top: 68px;
+			left: 10px;
+		}
+
+		.m-SearchList li {
+			height: 32px;
+			line-height: 32px;
+			padding: 0 24px;
+			color: #666;
+			position: relative;
+		}
+
+		.m-SearchList li:hover {
+			background: #ebebeb;
+		}
+
+		.m-SearchList li:after {
+			display: table;
+			/* clear: both; */
+			content: " ";
+			width: 14px;
+			height: 14px;
+			position: absolute;
+			left: 6px;
+			top: 6px;
+			background: url(sear.png) no-repeat;
+			background-position-y: -12px;
+		}
+
+		.clearTxt {
+			width: 16px;
+			height: 16px;
+			display: none;
+			background: url(tools_search_remove.png) no-repeat;
+			background-size: 16px;
+			background-position-y: 0;
+			content: " ";
+			cursor: pointer;
+			position: absolute;
+			top: 11px;
+			right: 65px;
+		}
+		
+		#tool_tips{
+			background: rgba(0,0,0,0.50);
+			color:#ffffff;
+			line-height:20px;
+			font-size: 12px;
+			padding-left:16px;
+		}
+
+		.clearTxt:hover {
+			background-position-y: -16px;
+		}
+	</style>
+</head>
+
+<body>
+	<div id="tool_tips" style="display:none;">
+		<marquee id= "marrueeTip" onMouseOut="this.start()" onMouseOver="this.stop()">
+			<span id="span_tips"></span>
+		</marquee>
+	</div>
+	
+	<div class="m-SearchBox">
+		<div class="SearchInput">
+			<input type="text" name="" id="" placeholder="Search Location">
+		</div>
+		<span class="clearTxt"></span>
+		<a title="Search"></a>
+	</div>
+	<div class="m-SearchList">
+		<ul>
+		</ul>
+	</div>
+
+	<div id="map">		
+	</div>
+	<script src="./jq.js"></script>
+
+	
+	<script src="./leaflet.js"></script>
+	<script src="./qwebchannel.js"></script>
+	<script src="./leaflet-geoip.js"></script>
+	<script src="./coordtransform.js"></script>
+	<script type="text/javascript">
+		var map = new L.Map('map', { zoom: 9, center: new L.latLng([0, 0]), zoomControl: false });
+		var ajaxArray = [];
+		function ajaxJsonp(url, param, successCB, errorCB) {
+			var settings = {
+				url: url,
+				data: param,
+				timeout: 10000,
+				cache: false,
+				type: "GET",
+				dataType: "jsonp",
+				jsonp: "json_callback",
+				success: function (data) {
+
+					if (successCB) {
+						successCB(data);
+					}
+				},
+				error: function (errorObj) {
+				}
+			}
+			var ajaxs = $.ajax(settings);
+			ajaxArray.push(ajaxs);
+		}
+
+
+		function stopAjax() {
+			// return;
+			for (var index = 0; index < ajaxArray.length; index++) {
+				ajaxArray[index].abort();
+			}
+			ajaxArray = [];
+		}
+		$(".m-SearchBox a").click(function () {
+			getSearch();
+		});
+		$(".clearTxt").click(function () {
+			$(".m-SearchBox input").val("");
+			$(".clearTxt").hide();
+
+			stopAjax();
+			$(".m-SearchList ul").html("");
+		});
+		
+		$('input').on("input propertychange", function () {
+			if ($(this).val().length >= 1) {
+				$(".clearTxt").show();
+			} else {
+				$(".clearTxt").hide();
+			}
+			getSearch();
+		})
+
+		function getSearch() {
+			stopAjax();
+			ajaxJsonp('https://nominatim.openstreetmap.org/search?format=json&q=' + $(".m-SearchBox input").val() + '&json_callback=L.Control.Search.callJsonp', null, function (data) {
+
+				var html = "";
+				for (var index = 0; index < data.length; index++) {
+
+					html += "<a data-lat=" + data[index].lat + " data-lng=" + data[index].lon + "><li>" + data[index].display_name + "</li></a>";
+				}
+				$(".m-SearchList ul").html(html);
+				$(".m-SearchList ul a").unbind("click");
+				$(".m-SearchList ul a").click(function () {
+					var lat = $(this).attr("data-lat");
+					var lng = $(this).attr("data-lng");
+					setView(lat, lng);
+				});
+
+			}, function (error) {
+			});
+		}
+
+		var ClickedMarkers = L.marker([0, 0]).addTo(map);
+		
+		function setView(lats, lngs) {
+			$(".m-SearchList ul").html("");
+			ClickedMarkers.setLatLng({ lat: lats, lng: lngs });
+			map.panTo({ lat: lats, lng: lngs });
+			try {
+				window.getRequest.slot_set_position(lngs, lats, "", 0, 0);
+			} catch (error) {
+
+			}
+		}
+		
+		function osm_load_layer(){
+			map.addLayer(new L.TileLayer('http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+				attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+			}));
+			
+			var zoom = 15;
+			L.GeoIP.centerMapOnPosition(map, ClickedMarkers, zoom);			
+			setPoint2(174.792480, -41.290190, 1);
+		}
+
+		
+		function setPoint2(lat,lng,isCallback){
+			var latlng = L.latLng(lng, lat);
+			ClickedMarkers.setLatLng(latlng);
+			map.panTo(latlng)
+			if (isCallback)
+			{
+				window.getRequest.slot_osm_position(latlng.lng, latlng.lat);
+			}
+		}
+		
+		map.on('click',  function (e) {
+			ClickedMarkers.setLatLng(e.latlng);
+			map.panTo(e.latlng);
+			
+			try {
+				
+				window.getRequest.slot_osm_position(e.latlng.lng, e.latlng.lat);
+				
+			} catch (error) {}
+		});
+		
+		map.addControl(new L.Control.Zoom());
+		
+		
+		// 更新提示条信息
+		var update_tips = function(tipsText){
+			var marruee = document.getElementById("marrueeTip");
+			var dli  = document.getElementById("tool_tips")
+			var dspa = document.getElementById("span_tips")
+			if (tipsText.length == 0) {
+				dli.style.display = "none";
+			}
+			else {
+				dspa.innerHTML = tipsText;
+				marruee.start();
+				dli.style.display = "";
+			}
+		}
+		
+		function _pcReady(){
+			window.getRequest.signal_update_tips.connect(update_tips);
+		}
+		
+	</script>
+</body>
+
+</html>

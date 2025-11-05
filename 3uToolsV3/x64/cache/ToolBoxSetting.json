@@ -1,0 +1,50 @@
+{
+	"MyDailyTools" : 
+	{
+		"0" : "Install 3uTools",
+		"1" : "Backup/Restore",
+		"10" : "Transfer Data",
+		"11" : "Stop iOS Update",
+		"12" : "Make Ringtone",
+		"13" : "Accessibility",
+		"14" : "Delete Invalid Icon",
+		"2" : "VirtualLocation",
+		"3" : "Realtime Screen",
+		"4" : "3uAirPlayer",
+		"5" : "Erase All Data",
+		"6" : "Batch Activation",
+		"7" : "iTunes Utility",
+		"8" : "Clean Garbage",
+		"9" : "Update IPCC file"
+	},
+	"OtherTools" : 
+	{
+		"0" : "Reboot iDevice",
+		"1" : "Turn Off iDevice",
+		"10" : "Convert HEIC",
+		"11" : "Compress Photo",
+		"12" : "Photo Deduplication",
+		"13" : "Firmware",
+		"14" : "UDisk",
+		"15" : "Edit Audio Tags",
+		"16" : "Convert Audio",
+		"17" : "Convert Video",
+		"18" : "3uPlayer",
+		"19" : "IPA Signature",
+		"2" : "Deactivate",
+		"20" : "Social App Backup",
+		"21" : "Manage Desc File",
+		"22" : "Accessory Info Query",
+		"23" : "Screen Recording",
+		"24" : "Jailbreak",
+		"25" : "Print Labels",
+		"26" : "Face ID Test",
+		"3" : "SSH",
+		"4" : "Enter Rec Mode",
+		"5" : "Backup BootSec",
+		"6" : "Screen Time",
+		"7" : "Crash Analysis",
+		"8" : "Manage Icon",
+		"9" : "Realtime Log"
+	}
+}

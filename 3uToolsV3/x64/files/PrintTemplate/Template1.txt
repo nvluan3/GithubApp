@@ -1,0 +1,78 @@
+{
+   "direction" : 0,
+   "height" : 30,
+   "items" : [
+      {
+         "align" : 0,
+         "bold" : false,
+         "fontfamily" : "Segoe UI",
+         "fontsize" : 8,
+         "height" : 4.1379310344827589,
+         "number" : "003",
+         "pos-x" : 3.9211822660098519,
+         "pos-y" : 2.7389162561576357,
+         "showtitle" : true,
+         "showtype" : 0,
+         "type" : 0,
+         "width" : 15.517241379310347
+      },
+      {
+         "align" : 0,
+         "bold" : false,
+         "fontfamily" : "Segoe UI",
+         "fontsize" : 8,
+         "height" : 4.1379310344827589,
+         "pos-x" : 4.068965517241379,
+         "pos-y" : 7.9733985727056504,
+         "showtitle" : false,
+         "showtype" : 0,
+         "type" : 1,
+         "width" : 14.039408866995075
+      },
+      {
+         "align" : 0,
+         "bold" : false,
+         "fontfamily" : "Segoe UI",
+         "fontsize" : 8,
+         "height" : 4.1379310344827589,
+         "pos-x" : 26.168472618892274,
+         "pos-y" : 12.95566455014233,
+         "showtitle" : true,
+         "showtype" : 0,
+         "type" : 2,
+         "width" : 22.167487684729068
+      },
+      {
+         "align" : 0,
+         "bold" : false,
+         "fontfamily" : "Segoe UI",
+         "fontsize" : 8,
+         "height" : 4.1379310344827589,
+         "pos-x" : 3.9211822660098519,
+         "pos-y" : 12.978324777387046,
+         "showtitle" : true,
+         "showtype" : 0,
+         "type" : 3,
+         "width" : 17.586206896551726
+      },
+      {
+         "align" : 0,
+         "bold" : false,
+         "fontfamily" : "Segoe UI",
+         "fontsize" : 8,
+         "height" : 10.011822700500487,
+         "pos-x" : 12.935960591133004,
+         "pos-y" : 17.892610549926754,
+         "showtitle" : false,
+         "showtype" : 2,
+         "type" : 4,
+         "width" : 35.914283752441392
+      }
+   ],
+   "margin-down" : 2,
+   "margin-left" : 2,
+   "margin-right" : 2,
+   "margin-up" : 2,
+   "name" : "Template1",
+   "width" : 60
+}
