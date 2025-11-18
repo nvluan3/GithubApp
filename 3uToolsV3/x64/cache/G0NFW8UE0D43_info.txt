@@ -10,7 +10,7 @@ BasebandStatus                                    BBInfoAvailable
 BasebandVersion                                   5.70.01
 BluetoothAddress                                  d8:de:3a:b4:dc:af
 BoardId                                           8
-BootSessionID                                     ED991B73-5711-40D1-AA01-08349A432BB6
+BootSessionID                                     3D3E4C18-80B4-49F0-AC0A-50DE9BFA6C79
 BrickState                                        false
 BuildVersion                                      22G100
 CPUArchitecture                                   arm64e
@@ -48,7 +48,7 @@ PRIVersion_Minor                                  1
 PRIVersion_ReleaseNo                              170
 PairRecordProtectionClass                         4
 PartitionType                                     GUID_partition_scheme
-PasswordProtected                                 false
+PasswordProtected                                 true
 PhoneNumber                                       +84 86 6268056
 PkHash                                            b87d05554b0994a844983d3962eac14a9178e83fadacd6a3b3e5f817b6ba0864e5e1ffe245cc1b88907d628b85364eb6
 ProductName                                       iPhone OS
@@ -69,7 +69,7 @@ SerialNumber                                      G0NFW8UE0D43
 SoftwareBehavior                                  11000000000000000000000000000000
 SoftwareBundleVersion                             
 TelephonyCapability                               true
-TimeIntervalSince1970                             1762145026.347472
+TimeIntervalSince1970                             1763353177.598867
 TimeZone                                          Asia/Saigon
 TimeZoneOffsetFromUTC                             25200.000000
 TrustedHostAttached                               true
