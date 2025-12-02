@@ -1,0 +1,36 @@
+Serial Number: 4CE247CRNH
+System Name: AUTO4CE247CRNH
+Model: HP Pavilion Desktop TP01-3xxx
+Member of: THACO.COM.VN
+Total physical memory: 15.70 GB
+Device Locator | Capacity | Speed
+DIMM1 | 8.00 GB | 3200
+DIMM2 | 8.00 GB | 3200
+Manufacturer: HP
+Operating System: Microsoft Windows 11 Pro
+Original Install Date: 25/03/2025 20:25:03
+Graphic card name: 
+Name | AdapterRam
+ + Intel(R) UHD Graphics 730 | 2.00 GB | 
+CPU name: 12th Gen Intel(R) Core(TM) i5-12400
+System Type: 64-bit
+-------------------------------------------------------------------------------------------------
+List Hard Disk: 
+Model | Serial | Size
+NVMe WDC PC SN530 SDBPNPZ-256G-1006 | E823_8FA6_BF53_0001_001B_448B_4B79_AE7B. | 238.47 GB
+WDC WD10EZEX-00BBHA0 | WD-WCC6YN70C653 | 931.51 GB
+-------------------------------------------------------------------------------------------------
+Drive | Total Size | Available Space
+C: | 237.65 GB | 48.48 GB
+D: | 931.51 GB | 876.50 GB
+G: | 15.00 GB | 4.20 GB
+-------------------------------------------------------------------------------------------------
+Windows IP Configuration: 
+Physical Address: 5C-60-BA-34-0A-93
+IPv4 Address: 10.10.110.96
+Subnet Mask: 255.255.255.0
+Default Gateway: fe80::1%5
+Default Gateway: 10.10.110.254
+DNS address: 
+ + 10.10.5.10
+ + 10.10.2.132
