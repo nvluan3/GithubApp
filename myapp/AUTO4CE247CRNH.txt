@@ -18,12 +18,14 @@ System Type: 64-bit
 List Hard Disk: 
 Model | Serial | Size
 NVMe WDC PC SN530 SDBPNPZ-256G-1006 | E823_8FA6_BF53_0001_001B_448B_4B79_AE7B. | 238.47 GB
+TOSHIBA MQ04ABF100 SCSI Disk Device | Z84LTNSYT | 931.51 GB
 WDC WD10EZEX-00BBHA0 | WD-WCC6YN70C653 | 931.51 GB
 -------------------------------------------------------------------------------------------------
 Drive | Total Size | Available Space
-C: | 237.65 GB | 48.48 GB
-D: | 931.51 GB | 876.50 GB
-G: | 15.00 GB | 4.20 GB
+C: | 237.65 GB | 19.20 GB
+D: | 931.51 GB | 840.66 GB
+E: | 931.51 GB | 141.70 GB
+G: | 15.00 GB | 3.69 GB
 -------------------------------------------------------------------------------------------------
 Windows IP Configuration: 
 Physical Address: 5C-60-BA-34-0A-93

@@ -48,7 +48,7 @@ PRIVersion_Minor                                  1
 PRIVersion_ReleaseNo                              170
 PairRecordProtectionClass                         4
 PartitionType                                     GUID_partition_scheme
-PasswordProtected                                 true
+PasswordProtected                                 false
 PhoneNumber                                       +84 86 6268056
 PkHash                                            b87d05554b0994a844983d3962eac14a9178e83fadacd6a3b3e5f817b6ba0864e5e1ffe245cc1b88907d628b85364eb6
 ProductName                                       iPhone OS
@@ -69,7 +69,7 @@ SerialNumber                                      G0NFW8UE0D43
 SoftwareBehavior                                  11000000000000000000000000000000
 SoftwareBundleVersion                             
 TelephonyCapability                               true
-TimeIntervalSince1970                             1763353177.598867
+TimeIntervalSince1970                             1766626757.309117
 TimeZone                                          Asia/Saigon
 TimeZoneOffsetFromUTC                             25200.000000
 TrustedHostAttached                               true
