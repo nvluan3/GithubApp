@@ -69,7 +69,7 @@ SerialNumber                                      G0NFW8UE0D43
 SoftwareBehavior                                  11000000000000000000000000000000
 SoftwareBundleVersion                             
 TelephonyCapability                               true
-TimeIntervalSince1970                             1766626757.309117
+TimeIntervalSince1970                             1767752319.333863
 TimeZone                                          Asia/Saigon
 TimeZoneOffsetFromUTC                             25200.000000
 TrustedHostAttached                               true
