@@ -19,7 +19,14 @@
 		<File path="i4Viewer.exe" />
 		<File path="WebView2Embed.dll" />		
 		<File path="WebView2Loader.dll" />	
+		<File path="librxpc.dll" />
+		<File path="opengl32sw.dll" />
+		<File path="wintun.dll" />		
 		<File path="libzip2.dll" />				
+		<File path="heif.dll" />	
+		<File path="libx265.dll" />	
+		<File path="libde265.dll" />
+		<File path="libidmg.dll" />			
 		<Dir path="tool" />
 		<Dir path="cache" />
 		<Dir path="dfutemp" />	
@@ -27,4 +34,7 @@
 		<Dir path="extrastools" />
 		<Dir path="log" />
 	</External>
+	<Process>
+		<File path="QEdgWebCore.exe" />
+	</Process>
 </Uninstall>
