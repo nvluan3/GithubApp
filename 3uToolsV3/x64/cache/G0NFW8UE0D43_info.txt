@@ -7,12 +7,12 @@ BasebandMasterKeyHash                             1B41607650EBF11C6B39F41CB267DC
 BasebandRegionSKU                                 00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
 BasebandSerialNumber                              fd8b5a7a
 BasebandStatus                                    BBInfoAvailable
-BasebandVersion                                   6.20.03
+BasebandVersion                                   6.40.01
 BluetoothAddress                                  d8:de:3a:b4:dc:af
 BoardId                                           8
-BootSessionID                                     A363C181-D232-4ED8-8AE3-21C7E8CB83FB
+BootSessionID                                     86B6E0BF-4A2E-435C-BA11-7B3A21EFA018
 BrickState                                        false
-BuildVersion                                      23C71
+BuildVersion                                      23D127
 CPUArchitecture                                   arm64e
 CertID                                            3095201109
 ChipID                                            33025
@@ -22,7 +22,7 @@ DeviceColor                                       1
 DeviceName                                        nvluan3’s iPhone
 DieID                                             7076564555726878
 EthernetAddress                                   d8:de:3a:bc:b9:ef
-FirmwareVersion                                   iBoot-13822.62.5
+FirmwareVersion                                   iBoot-13822.82.4
 FusingStatus                                      3
 GID1                                              00000000
 GID2                                              00000000
@@ -30,7 +30,7 @@ HardwareModel                                     D54pAP
 HardwarePlatform                                  t8101
 HasSiDP                                           true
 HostAttached                                      true
-HumanReadableProductVersionString                 26.2.1
+HumanReadableProductVersionString                 26.3
 IntegratedCircuitCardIdentity                     89840480009437041356
 IntegratedCircuitCardIdentity2                    8984012307122343199
 InternationalMobileEquipmentIdentity              355660528793708
@@ -53,7 +53,7 @@ PhoneNumber                                       +84 86 6268056
 PkHash                                            b87d05554b0994a844983d3962eac14a9178e83fadacd6a3b3e5f817b6ba0864e5e1ffe245cc1b88907d628b85364eb6
 ProductName                                       iPhone OS
 ProductType                                       iPhone13,4
-ProductVersion                                    26.2.1
+ProductVersion                                    26.3
 ProductionSOC                                     true
 ProtocolVersion                                   2
 RegionInfo                                        LL/A
@@ -69,7 +69,7 @@ SerialNumber                                      G0NFW8UE0D43
 SoftwareBehavior                                  11000000000000000000000000000000
 SoftwareBundleVersion                             
 TelephonyCapability                               true
-TimeIntervalSince1970                             1771910203.418743
+TimeIntervalSince1970                             1772259852.189646
 TimeZone                                          Asia/Saigon
 TimeZoneOffsetFromUTC                             25200.000000
 TrustedHostAttached                               true
