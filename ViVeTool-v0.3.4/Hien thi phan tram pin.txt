@@ -1,0 +1,3 @@
+vivetool /enable /id:48822452
+vivetool /enable /id:48433719
+vivetool /enable /id:45345690
