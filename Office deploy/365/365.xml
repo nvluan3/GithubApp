@@ -1,0 +1,30 @@
+<Configuration ID="1208f1a2-edf9-43d5-ae60-5c36aa3a73e3">
+  <Add OfficeClientEdition="64" Channel="Current">
+    <Product ID="VisioProRetail">
+      <Language ID="en-us" />
+      <ExcludeApp ID="Groove" />
+      <ExcludeApp ID="Lync" />
+      <ExcludeApp ID="OneDrive" />
+      <ExcludeApp ID="OutlookForWindows" />
+      <ExcludeApp ID="Publisher" />
+    </Product>
+	<Product ID="ProjectProRetail">
+      <Language ID="en-us" />
+      <ExcludeApp ID="Groove" />
+      <ExcludeApp ID="Lync" />
+      <ExcludeApp ID="OneDrive" />
+      <ExcludeApp ID="OutlookForWindows" />
+      <ExcludeApp ID="Publisher" />
+    </Product>
+    <Product ID="O365ProPlusRetail">
+      <Language ID="en-us" />
+      <ExcludeApp ID="Groove" />
+      <ExcludeApp ID="Lync" />
+      <ExcludeApp ID="OneDrive" />
+      <ExcludeApp ID="OutlookForWindows" />
+      <ExcludeApp ID="Publisher" />
+    </Product>
+  </Add>
+  <Updates Enabled="TRUE" />
+  <RemoveMSI />
+</Configuration>
