@@ -7,11 +7,12 @@ echo MENU CẤU HÌNH OFFICE VA WINDOWS
 echo ====================================
 echo Chọn một tùy chọn:
 echo 1 - Bật/ Tắt Protected View (Word, Excel, PowerPoint)
-echo 2 - Tăt Smart App Control
+echo 2 - Tắt Smart App Control
 echo 3 - Chạy SFC /SCANNOW
 echo 4 - Chạy DISM /RestoreHealth
 echo 5 - Reset Office (chọn ứng dụng cụ thể)
 echo 6 - Đặt múi giờ (UTC+07:00) Bangkok, Hanoi, Jakarta và đồng bộ thời gian (yêu cầu quyền admin)
+echo 24 - Cấu hình Windows định dạng ngày tháng sang dd/MM/yyyy
 echo 7 - Thêm máy in
 echo 8 - Mở Windows Defender Firewall
 echo 9 - Mở Devices and Printers
@@ -28,6 +29,9 @@ echo 19 - Lấy số seri máy tính
 echo 20 - Lấy địa chỉ IP máy tính
 echo 21 - Chạy Disk Cleanup
 echo 22 - Bật/tắt Windows Firewall (yêu cầu quyền admin)
+echo 23 - Cấu hình cho Outlook để file PST có thể đạt tối đa 80 GB
+echo 25 - Bật/tắt Windows Defender Antivirus (yêu cầu quyền admin)
+echo 26 - Mở User Account Control Settings
 echo 0 - Thoát
 echo ====================================
 set /p choice=Nhập lựa chọn của bạn:
@@ -54,6 +58,10 @@ if %choice%==19 goto Luachon19
 if %choice%==20 goto Luachon20
 if %choice%==21 goto Luachon21
 if %choice%==22 goto Luachon22
+if %choice%==23 goto Luachon23
+if %choice%==24 goto Luachon24
+if %choice%==25 goto Luachon25
+if %choice%==26 goto Luachon26
 
 echo Lựa chọn không hợp lệ. Vui lòng thử lại.
 
@@ -98,22 +106,26 @@ else (
     echo Lựa chọn không hợp lệ.
     goto Luachon1
 )
+pause
 goto Menu
 
 :Luachon2
 echo Đang tắt Smart App Control...
 reg add "HKLM\SYSTEM\CurrentControlSet\Control\SmartAppControl" /v SACEnabled /t REG_DWORD /d 0 /f
 echo Đã tắt Smart App Control.
+pause
 goto Menu
 
 :Luachon3
 echo Đang chạy SFC /SCANNOW...
 powershell -Command "Start-Process cmd -ArgumentList '/c sfc /scannow' -Verb RunAs"
+pause
 goto Menu
 
 :Luachon4
 echo Đang chạy DISM /RestoreHealth...
 powershell -Command "Start-Process cmd -ArgumentList '/c DISM.exe /Online /Cleanup-Image /RestoreHealth' -Verb RunAs"
+pause
 goto Menu
 
 :Luachon5
@@ -138,6 +150,7 @@ if %appChoice%==1 (
 else (
     echo Lựa chọn không hợp lệ.
 )
+pause
 goto Menu
 
 :Luachon6
@@ -145,37 +158,44 @@ echo Đang đặt múi giờ về (UTC+07:00) Bangkok, Hanoi, Jakarta...
 powershell -Command "Start-Process cmd -ArgumentList '/c tzutil /s "SE Asia Standard Time"' -Verb RunAs"
 echo Đang thực hiện đồng bộ thời gian với quyền Admin...
 powershell -Command "Start-Process cmd -ArgumentList '/c w32tm /resync && net stop w32time && net start w32time' -Verb RunAs"
+pause
 goto Menu
 
 :Luachon7
 echo Đang thêm máy in...
 start rundll32 printui.dll,PrintUIEntry /il
+pause
 goto Menu
 
 :Luachon8
 echo Mở Windows Defender Firewall...
 start ms-settings:windowsdefender
+pause
 goto Menu
 
 :Luachon9
 echo Mở Devices and Printers...
 start shell:::{A8A91A66-3A7D-4424-8D24-04E180695C7A}
+pause
 goto Menu
 
 :Luachon10
 echo Đang cài đặt Print Management Console...
 powershell -Command "Start-Process cmd -ArgumentList '/c dism /Online /add-Capability /CapabilityName:Print.Management.Console~~~~0.0.1.0' -Verb RunAs"
+pause
 goto Menu
 
 :Luachon11
 echo Đặt đơn vị đo Word sang cm...
 reg add HKCU\SOFTWARE\Microsoft\Office\16.0\Word\Options /v RulerUnits /t REG_DWORD /d 1 /F
 reg add HKCU\Software\Microsoft\Office\16.0\Word\Options /v MeasurementUnits /t REG_DWORD /d 2 /f
+pause
 goto Menu
 
 :Luachon12
 echo Đang active Windows và Office...
 powershell -Command "irm https://get.activated.win | iex"
+pause
 goto Menu
 
 :Luachon13
@@ -197,6 +217,7 @@ else (
     echo Lựa chọn không hợp lệ.
     goto Luachon13
 )
+pause
 goto Menu
 
 :Luachon14
@@ -220,17 +241,20 @@ else (
     echo Lựa chọn không hợp lệ.
     goto Luachon14
 )
+pause
 goto Menu
 
 
 :Luachon15
 echo Đang nâng cấp Windows 11 Home lên Pro...
 powershell -Command "Start-Process cmd -ArgumentList '/c sc config LicenseManager start= auto ^& net start LicenseManager ^& sc config wuauserv start= auto ^& net start wuauserv ^& changepk.exe /productkey VK7JG-NPHTM-C97JM-9MPGT-3V66T' -Verb RunAs"
+pause
 goto Menu
 
 :Luachon16
 echo Mở hộp thoại Folder Options...
 start control folders
+pause
 goto Menu
 
 :Luachon17
@@ -279,6 +303,8 @@ else (
     echo Lựa chọn không hợp lệ.
     goto Luachon18
 )
+pause
+goto Menu
 
 :Luachon19
 echo Đang lấy số seri máy tính...
@@ -295,6 +321,7 @@ goto Menu
 :Luachon21
 echo Đang chạy Disk Cleanup...
 powershell -Command "Start-Process cmd -ArgumentList '/c cleanmgr /sagerun:1' -Verb RunAs"
+pause
 goto Menu
 
 
@@ -305,10 +332,10 @@ echo 2 - Tắt Windows Firewall
 echo 0 - Quay lại menu
 set /p fwChoice=Nhập lựa chọn:
 if %fwChoice%==1 (
-    powershell -Command "Start-Process cmd -ArgumentList '/c netsh advfirewall set currentprofile state on' -Verb RunAs"
+    powershell -Command "Start-Process cmd -ArgumentList '/c netsh advfirewall set allprofiles state on' -Verb RunAs"
     echo Đã bật Windows Firewall.
 ) else if %fwChoice%==2 (
-    powershell -Command "Start-Process cmd -ArgumentList '/c netsh advfirewall set currentprofile state off' -Verb RunAs"
+    powershell -Command "Start-Process cmd -ArgumentList '/c netsh advfirewall set allprofiles state off' -Verb RunAs"
     echo Đã tắt Windows Firewall.
 ) else if %fwChoice%==0 (
     goto Menu
@@ -317,6 +344,53 @@ else (
     echo Lựa chọn không hợp lệ.
     goto Luachon22
 )
+pause
+goto Menu
+
+:Luachon23
+echo Đang cấu hình Outlook để file PST có thể đạt tối đa 80 GB...
+REG ADD "HKCU\SOFTWARE\Microsoft\Office\16.0\Outlook\PST" /v "MaxLargeFileSize" /t REG_DWORD /d "81920" /f
+REG ADD "HKCU\SOFTWARE\Microsoft\Office\16.0\Outlook\PST" /v "WarnLargeFileSize" /t REG_DWORD /d "76800" /f
+echo Đã cấu hình Outlook để file PST có thể đạt tối đa 80 GB.
+pause
+goto Menu
+
+:Luachon24
+echo Đang cấu hình Windows định dạng ngày tháng sang dd/MM/yyyy...
+REG ADD "HKCU\Control Panel\International" /v "sShortDate" /t REG_SZ /d "dd/MM/yyyy" /f
+echo Đã cấu hình Windows định dạng ngày tháng sang dd/MM/yyyy.
+pause
+goto Menu
+
+:Luachon25
+echo Chọn:
+echo 1 - Bật Windows Defender Antivirus
+echo 2 - Tắt Windows Defender Antivirus
+echo 0 - Quay lại menu
+set /p defenderChoice=Nhập lựa chọn:
+if %defenderChoice%==1 (
+    powershell -Command "Start-Process cmd -ArgumentList '/c HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows Defender /v DisableAntiSpyware /t REG_DWORD /d 0 /f' -Verb RunAs"
+    powershell -Command "Start-Process cmd -ArgumentList '/c sc config WinDefend start= auto' -Verb RunAs"
+    echo Đã bật Windows Defender Antivirus.
+) else if %defenderChoice%==2 (
+    powershell -Command "Start-Process cmd -ArgumentList '/c HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows Defender /v DisableAntiSpyware /t REG_DWORD /d 1 /f' -Verb RunAs"
+    powershell -Command "Start-Process cmd -ArgumentList '/c sc config WinDefend start= disabled' -Verb RunAs"
+    echo Đã tắt Windows Defender Antivirus.
+) else if %defenderChoice%==0 (
+    goto Menu
+)
+else (
+    echo Lựa chọn không hợp lệ.
+    goto Luachon25
+)
+pause
+goto Menu
+
+:Luachon26
+echo Mở User Account Control Settings...
+start UserAccountControlSettings.exe
+pause
+goto Menu
 
 :End
 exit
