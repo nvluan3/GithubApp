@@ -3,10 +3,15 @@ chcp 65001
 :Menu
 cls
 echo ====================================
-echo MENU CẤU HÌNH OFFICE VA WINDOWS
+echo MENU CẤU HÌNH OFFICE VÀ WINDOWS
 echo ====================================
 echo Chọn một tùy chọn:
 echo 1 - Bật/ Tắt Protected View (Word, Excel, PowerPoint)
+echo 13 - Bật/tắt Snipping Tool bằng phím Print Screen
+echo 14 - Bật/tắt SmartScreen
+echo 18 - Bật/tắt Office 365 Simplified Account Creation
+echo 22 - Bật/tắt Windows Firewall (yêu cầu quyền admin)
+echo 25 - Bật/tắt Windows Defender Antivirus (yêu cầu quyền admin)
 echo 2 - Tắt Smart App Control
 echo 3 - Chạy SFC /SCANNOW
 echo 4 - Chạy DISM /RestoreHealth
@@ -16,22 +21,19 @@ echo 24 - Cấu hình Windows định dạng ngày tháng sang dd/MM/yyyy
 echo 7 - Thêm máy in
 echo 8 - Mở Windows Defender Firewall
 echo 9 - Mở Devices and Printers
+echo 16 - Mở hộp thoại Folder Options
+echo 26 - Mở User Account Control Settings
+echo 21 - Mở Disk Cleanup
 echo 10 - Cài đặt Print Management Tools
 echo 11 - Đặt đơn vị đo Word sang cm
 echo 12 - Active windows và office (yêu cầu quyền admin)
-echo 13 - Bật/tắt Snipping Tool bằng phím Print Screen
-echo 14 - Bật/tắt SmartScreen
 echo 15 - Nâng cấp windows 11 Home lên Pro (yêu cầu quyền admin)
-echo 16 - Mở hộp thoại Folder Options
 echo 17 - Tắt bitlocker (yêu cầu quyền admin)
-echo 18 - Bật/tắt Office 365 Simplified Account Creation
 echo 19 - Lấy số seri máy tính
 echo 20 - Lấy địa chỉ IP máy tính
-echo 21 - Chạy Disk Cleanup
-echo 22 - Bật/tắt Windows Firewall (yêu cầu quyền admin)
 echo 23 - Cấu hình cho Outlook để file PST có thể đạt tối đa 80 GB
-echo 25 - Bật/tắt Windows Defender Antivirus (yêu cầu quyền admin)
-echo 26 - Mở User Account Control Settings
+echo 27 - Tắt thông báo 'Hoàn tất thiết lập thiết bị của bạn'
+echo 28 - Tắt Task View và Widgets trên Windows 11
 echo 0 - Thoát
 echo ====================================
 set /p choice=Nhập lựa chọn của bạn:
@@ -62,6 +64,8 @@ if %choice%==23 goto Luachon23
 if %choice%==24 goto Luachon24
 if %choice%==25 goto Luachon25
 if %choice%==26 goto Luachon26
+if %choice%==27 goto Luachon27
+if %choice%==28 goto Luachon28
 
 echo Lựa chọn không hợp lệ. Vui lòng thử lại.
 
@@ -391,6 +395,25 @@ echo Mở User Account Control Settings...
 start UserAccountControlSettings.exe
 pause
 goto Menu
+
+:Luachon27
+echo Đang tắt thông báo 'Hoàn tất thiết lập thiết bị của bạn'...
+reg add "HKCU\Software\Microsoft\Windows\CurrentVersion\ContentDeliveryManager" /v "SubscribedContent-310093Enabled" /t REG_DWORD /d 0 /f
+reg add "HKCU\Software\Microsoft\Windows\CurrentVersion\ContentDeliveryManager" /v "SubscribedContent-338388Enabled" /t REG_DWORD /d 0 /f
+reg add "HKCU\Software\Microsoft\Windows\CurrentVersion\ContentDeliveryManager" /v "SubscribedContent-338389Enabled" /t REG_DWORD /d 0 /f
+echo Đã tắt thông báo 'Hoàn tất thiết lập thiết bị của bạn'.
+pause
+goto Menu
+
+:Luachon28
+echo Đang tắt Task View và Widgets trên Windows 11...
+reg add "HKCU\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced" /v "ShowTaskViewButton" /t REG_DWORD /d 0 /f
+reg add "HKCU\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced" /v "TaskbarDa" /t REG_DWORD /d 0 /f
+echo Đã tắt Task View và Widgets trên Windows 11.
+pause
+goto Menu
+
+
 
 :End
 exit
