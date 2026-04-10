@@ -62,7 +62,7 @@ do {
         }
         "2" {
             $scriptDir = Split-Path -Parent $MyInvocation.MyCommand.Definition
-            $driverPath2 = Join-Path $scriptDir "MP 2554-3054-3554-4054-5054-6054 series\disk1\OEMSETUP.INF"
+            $driverPath2 = Join-Path $scriptDir "MP 2554-3054-3554-4054-5054-6054 series\disk1\MP_2554_.INF"
             $driverName2 = "RICOH MP 3054 PCL 6"
             $printer2Name = "RICOH MP 3054 (sadora may 2)"
             $port2Name = "IP_10.10.108.52"
