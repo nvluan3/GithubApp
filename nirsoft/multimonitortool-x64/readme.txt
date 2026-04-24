@@ -1,9 +1,9 @@
 
 
 
-MultiMonitorTool v1.96
-Copyright (c) 2012 - 2019 Nir Sofer
-Web site: http://www.nirsoft.net
+MultiMonitorTool v2.21
+Copyright (c) 2012 - 2025 Nir Sofer
+Web site: https://www.nirsoft.net
 
 
 
@@ -26,7 +26,7 @@ System Requirements and Limitations
 
 
 * This utility works on any version of Windows, starting from Windows
-  XP and up to Windows 10. Both 32-bit and x64 systems are supported.
+  XP and up to Windows 11. Both 32-bit and x64 systems are supported.
 * When you disable a monitor on a system with 3 monitors or more, and
   then later enable back the monitor, the operating system may put the
   monitor in another position. In order to avoid this problem, use the
@@ -42,6 +42,83 @@ System Requirements and Limitations
 Versions History
 ================
 
+
+* Version 2.21
+  o Fixed bitmap objects leak occurred when using the monitor preview
+    window with the 'Draw Cursor In Monitor Preview' option. This bug
+    caused the monitor preview to stop working after a while.
+
+* Version 2.20
+  o Added /SetScale command-line option to set the display scaling on
+    Windows 11/10, for example:
+    MultiMonitorTool.exe /SetScale "\\.\DISPLAY1" 150
+  o Added new display scaling columns: 'Current Scale' and 'Maximum
+    Scale'.
+
+* Version 2.15
+  o Added a workaround for the new problems appeared in Windows 11
+    24H2 update. The workaround is applied in the following features: Set
+    as primary monitor, Load monitors configuration, /SetMonitors
+    command, /SetPrimary command, /LoadConfig command.
+  o Notice for Windows 11 24H2: If you are in situation that every
+    action you try in MultiMonitorTool fails completely, you should go to
+    the monitors settings of Windows and change something, or unplug and
+    plug one of the monitors, and then go back to MultiMonitorTool and
+    try again.
+  o When loading a monitor configuration, MultiMonitorTool now
+    applies the monitors configuration multiple times, because on complex
+    monitors systems it's needed to set all monitors properly. Added
+    MonitorsConfigNumOfCalls value to MultiMonitorTool.cfg to control the
+    number of times that the monitors configuration is set. The default
+    is 5 times.
+  o The resolution and position information of disabled monitors is
+    now taken directly from the Registry, which is more reliable data
+    source. This information is also used to enable back the monitor.
+  o Added /EnableAtPosition command, which allows you to enable a
+    monitor in the specified position, for example:
+    MultiMonitorTool.exe /EnableAtPosition "\\.\DISPLAY1" 1920 0
+
+* Version 2.11
+  o Fixed issue: On some systems, when a monitor was disconnected,
+    MultiMonitorTool displayed incorrect monitor id and other incorrect
+    monitor information. From this version the monitor information fields
+    will be empty if the monitor information is not available.
+
+* Version 2.10
+  o Added 'Short Monitor ID' column. You can use the value displayed
+    in this column in all command-line options.
+  o Added 'Use Short Monitor ID as Name' to the 'Copy /SetMonitors
+    Command Mode' option.
+
+* Version 2.05
+  o Added drop-down menu to the toolbar for opening the recent config
+    files.
+  o The serial number of the monitor is now stored inside the monitor
+    config file.
+  o Added 'Use Serial Number In Load Config' option. If it's turned
+    on, MultiMonitorTool uses the serial number of the monitor when
+    loading the monitor configuration file.
+
+* Version 2.00
+  o Added /SetMonitors command-line option, which allows you to set
+    the desired settings of multiple monitors at once, without using an
+    external config file, for example:
+    MultiMonitorTool.exe /SetMonitors "Name=\\.\DISPLAY2 BitsPerPixel=32
+    Width=1600 Height=900 DisplayFlags=0 DisplayFrequency=60
+    DisplayOrientation=0 PositionX=1920 PositionY=0" "Name=\\.\DISPLAY1
+    Primary=1 BitsPerPixel=32 Width=1920 Height=1080 DisplayFlags=0
+    DisplayFrequency=60 DisplayOrientation=0 PositionX=0 PositionY=0"
+  o For the 'Name' variable in this command, you can use the monitor
+    name, Monitor ID, and the serial number of the monitor.
+  o Added 'Copy /SetMonitors Command' (Under the Edit menu), which
+    generates the /SetMonitors Command for the selected monitors and then
+    copies the command to the clipboard. You can generate the
+    /SetMonitors command for your current monitors configuration, and
+    then later execute the command to restore this monitors configuration.
+  o Added 'Copy /SetMonitors Command Mode' (Under the Options menu),
+    which allows you to choose how the /SetMonitors command is generated
+    ('Use \\.\DISPLAYx as Name', 'Use Monitor ID as Name', or 'Use Serial
+    Number as Name')
 
 * Version 1.96
   o When trying to enable a monitor from command-line ( /enable
@@ -327,10 +404,43 @@ following values:
   \\.\DISPLAY1, 2 for \\.\DISPLAY2, and so on...)
 * Monitor ID, as it appears in the 'Monitor ID' column, for example:
   MONITOR\GSM59A4\{4d36e96e-e325-11ce-bfc1-08002be10318}\0008
+* Short Monitor ID, as it appears in the 'Short Monitor ID' column, for
+  example: GSM59A4
 * The serial number of the monitor, as it appears in the 'Monitor
   Serial Number' column.
 
 
+
+/SetMonitors <Monitor 1 Config> <Monitor 2 Config> <Monitor 3 Config>...
+Allows you to set the desired settings of multiple monitors at once,
+without using an external config file, for example:
+MultiMonitorTool.exe /SetMonitors "Name=\\.\DISPLAY1 Primary=1
+BitsPerPixel=32 Width=1920 Height=1080 DisplayFlags=0 DisplayFrequency=60
+DisplayOrientation=0 PositionX=0 PositionY=0" "Name=\\.\DISPLAY2
+BitsPerPixel=32 Width=1600 Height=900 DisplayFlags=0 DisplayFrequency=60
+DisplayOrientation=0 PositionX=1920 PositionY=0"
+
+In order to generate the /SetMonitors command for your current monitors
+configuration, simply select all monitors in the main window (Ctrl+A),
+and then use the 'Copy /SetMonitors Command' option (Under the Edit
+menu). The generated /SetMonitors command will be copied to the
+clipboard. By default, the /SetMonitors command is generated using the
+Monitor ID as name, but you can change it to monitor name or serial
+number from Options -> Copy /SetMonitors Command Mode.
+
+Optionally, you can remove some of the variables from the generated
+/SetMonitors command, if you usually don't change them on your system.
+For example, if you don't change the monitor resolution and orientation,
+and you only need to change the monitor positions, you can remove all
+variables except of the Name, PositionX, and PositionY:
+MultiMonitorTool.exe /SetMonitors "Name=\\.\DISPLAY1 PositionX=0
+PositionY=0" "Name=\\.\DISPLAY2 PositionX=1920 PositionY=0"
+
+You can also use the /SetMonitors command to set only specific display
+settings of specific monitor. For example, the following command sets the
+monitor with the specified serial number to 1920 X 1080 resolution:
+MultiMonitorTool.exe /SetMonitors "Name=334DFRGV451 Width=1920
+Height=1080"
 
 /disable <Monitors>
 Disables the specified monitors. You can specify a single monitor or
@@ -346,6 +456,13 @@ Examples:
 MultiMonitorTool.exe /enable 3
 MultiMonitorTool.exe /enable \\.\DISPLAY1
 MultiMonitorTool.exe /enable 3 2
+
+/EnableAtPosition <Monitor> <X Position> <Y Position>
+Enables the specified monitor at the specified position. If the /Enable
+command doesn't work properly for you, you should try to enable the
+monitor at the desired position.
+Example:
+MultiMonitorTool.exe /EnableAtPosition "\\.\DISPLAY2" 1920 0
 
 /switch <Monitors>
 Switches the specified monitors between enabled and disabled state.
@@ -380,6 +497,20 @@ running this command will set the second monitor as the primary. running
 this command again will set the third monitor as the primary. And...
 running this command again will set (again) the first monitor as the
 primary.
+
+/SetScale <Monitor> <Scale Value>
+Set the display scaling on Windows 11/10. The <Scale Value> is the
+absolute scale value in percent, for example: 100,125,150,175,200,225,
+and so on...
+You can also specify a relative value. In this case - you have to specify
+'0' to set the recommended display scaling, a positive number (1, 2, 3,
+...) to set display scaling larger than recommended, or a negative number
+(-1, -2, -3, ...) to set display scaling smaller than recommended.
+
+Example:
+MultiMonitorTool.exe /SetScale "\\.\DISPLAY1" 125
+MultiMonitorTool.exe /SetScale "Primary" 150
+MultiMonitorTool.exe /SetScale "\\.\DISPLAY2" -1
 
 /TurnOff <Monitors>
 Turns off the specified monitors. This feature works only if you have
