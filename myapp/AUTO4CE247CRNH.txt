@@ -17,22 +17,20 @@ System Type: 64-bit
 -------------------------------------------------------------------------------------------------
 List Hard Disk: 
 Model | Serial | Size
-NVMe WDC PC SN530 SDBPNPZ-256G-1006 | E823_8FA6_BF53_0001_001B_448B_4B79_AE7B. | 238.47 GB
-TOSHIBA MQ04ABF100 SCSI Disk Device | Z84LTNSYT | 931.51 GB
+NVMe HFM512GDJTNG-8310A | NJ94N163711104F1D   _00000001. | 476.94 GB
 WDC WD10EZEX-00BBHA0 | WD-WCC6YN70C653 | 931.51 GB
+Lexar USB Flash Drive USB Device | 54093234255154CE | 58.59 GB
 -------------------------------------------------------------------------------------------------
 Drive | Total Size | Available Space
-C: | 237.65 GB | 19.20 GB
-D: | 931.51 GB | 840.66 GB
-E: | 931.51 GB | 141.70 GB
-G: | 15.00 GB | 3.69 GB
+C: | 476.04 GB | 241.71 GB
+D: | 931.51 GB | 723.06 GB
+G: | 15.00 GB | 3.39 GB
 -------------------------------------------------------------------------------------------------
 Windows IP Configuration: 
-Physical Address: 5C-60-BA-34-0A-93
-IPv4 Address: 10.10.110.96
-Subnet Mask: 255.255.255.0
-Default Gateway: fe80::1%5
-Default Gateway: 10.10.110.254
+Physical Address: 00-15-5D-68-D0-00
+IPv4 Address: 172.17.240.1
+Subnet Mask: 255.255.240.0
 DNS address: 
- + 10.10.5.10
- + 10.10.2.132
+ + fec0:0:0:ffff::1%1
+ + fec0:0:0:ffff::2%1
+ + fec0:0:0:ffff::3%1
