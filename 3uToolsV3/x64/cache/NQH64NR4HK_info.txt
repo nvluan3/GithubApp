@@ -69,7 +69,7 @@ SerialNumber                                      NQH64NR4HK
 SoftwareBehavior                                  01000000000000000000000000000000
 SoftwareBundleVersion                             
 TelephonyCapability                               true
-TimeIntervalSince1970                             1779789459.301905
+TimeIntervalSince1970                             1780719860.535085
 TimeZone                                          Asia/Ho_Chi_Minh
 TimeZoneOffsetFromUTC                             25200.000000
 TrustedHostAttached                               true
