@@ -9,3 +9,9 @@
 [2024-12-31 02:23:37.763] [info   ] [sw_updater ] [18516:15672] [98DA86: 105] asw::su_controller::detail::SUControllerModule::GetScanState:S-1-5-21-2207473928-3802511405-224430898-1002
 [2024-12-31 02:23:37.763] [info   ] [sw_updater ] [18516:15672] [98DA86: 105] asw::su_controller::detail::SUControllerModule::GetScanState:S-1-5-21-2207473928-3802511405-224430898-1002
 [2024-12-31 02:23:37.763] [info   ] [sw_updater ] [18516:15672] [98DA86: 105] asw::su_controller::detail::SUControllerModule::GetDetections:S-1-5-21-2207473928-3802511405-224430898-1002
+[2026-06-29 09:13:07.704] [info   ] [sw_updater ] [10120: 3388] [98DA86:  96] asw::su_controller::detail::SUControllerModule::OnScanStateUpdated
+[2026-06-29 09:13:07.704] [info   ] [sw_updater ] [10120: 3388] [98DA86:  96] asw::su_controller::detail::SUControllerModule::OnDetectionsUpdated
+[2026-06-29 09:13:07.704] [info   ] [sw_updater ] [10120: 3388] [98DA86: 105] asw::su_controller::detail::SUControllerModule::StartScan:S-1-5-21-1111752460-4223770961-2108998557-36840,Nothing,Manual,,nullopt
+[2026-06-29 09:13:17.469] [info   ] [sw_updater ] [10120:11012] [98DA86: 105] asw::su_controller::detail::SUControllerModule::GetDetections:S-1-5-21-1111752460-4223770961-2108998557-36840
+[2026-06-29 09:13:17.536] [info   ] [sw_updater ] [10120:12776] [1C62F9:  48] Cleaning up data directory: D:\nvluan3\GithubApp\ccsetup631\Data\su_data
+[2026-06-29 09:13:17.536] [info   ] [sw_updater ] [10120:12776] [1C62F9:  62] Data directory successfully cleaned

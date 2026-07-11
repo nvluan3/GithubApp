@@ -6,3 +6,11 @@
 [2024-12-31 02:23:29.005] [info   ] [DULib      ] [18516:12176] [48668A: 371] [24.2.5234.0] [Device.cpp] [371] DriverUpdater::Device::SetInstalledDriverFlag: Setting DNF_INSTALLEDDRIVER flag for driver: MSPORTS.INF|10.0.26100.1150|12795321600
 [2024-12-31 02:23:29.037] [info   ] [DULib      ] [18516:12176] [CEF02C:2297] [24.2.5234.0] [DriverUpdater.cpp] [2298] DriverUpdater::DriverUpdaterImpl::Scan: For your computer 245 related drivers are available - 10 are newer
 [2024-12-31 02:23:29.037] [info   ] [DULib      ] [18516:12176] [CEF02C:2299] [24.2.5234.0] [DriverUpdater.cpp] [2299] DriverUpdater::DriverUpdaterImpl::Scan: 0 drivers are vulnerable
+[2026-06-29 09:13:00.165] [info   ] [DULib      ] [10120: 3712] [3273A3:  38] [24.2.5234.0] [UpdateManager.cpp] [38] DriverUpdater::UpdateManager::UpdateManager: Initialize Update Engine
+[2026-06-29 09:13:00.187] [warning] [DULib      ] [10120:24432] [CEF02C:1822] [24.2.5234.0] [DriverUpdater.cpp] [1822] DriverUpdater::DriverUpdaterImpl::readStateFile: State File signature is not valid
+[2026-06-29 09:13:00.593] [info   ] [DULib      ] [10120:13096] [CEF02C:1416] [24.2.5234.0] [DriverUpdater.cpp] [1416] DriverUpdater::DriverUpdaterImpl::logTask: Creating new SCAN Task
+[2026-06-29 09:13:00.595] [info   ] [DULib      ] [10120:24432] [CEF02C:2239] [24.2.5234.0] [DriverUpdater.cpp] [2239] DriverUpdater::DriverUpdaterImpl::Scan: Starting Scan
+[2026-06-29 09:13:05.865] [info   ] [DULib      ] [10120:24432] [CEF02C:2277] [24.2.5234.0] [DriverUpdater.cpp] [2277] DriverUpdater::DriverUpdaterImpl::Scan: We found 68 Devices on your system.
+[2026-06-29 09:13:07.606] [info   ] [DULib      ] [10120:24432] [CEF02C:2297] [24.2.5234.0] [DriverUpdater.cpp] [2298] DriverUpdater::DriverUpdaterImpl::Scan: For your computer 213 related drivers are available - 7 are newer
+[2026-06-29 09:13:07.606] [info   ] [DULib      ] [10120:24432] [CEF02C:2299] [24.2.5234.0] [DriverUpdater.cpp] [2299] DriverUpdater::DriverUpdaterImpl::Scan: 0 drivers are vulnerable
+[2026-06-29 09:23:20.024] [info   ] [DULib      ] [15952:19596] [3390A7:  38] [*erUpdater::UpdateManager::UpdateManager] Initialize Update Engine

@@ -1,0 +1,284 @@
+﻿[2026-06-30 09:12:01.615] [notice ] [bug_report ] [26508:26480] [60E748: 313] BugReport started.
+[2026-06-30 09:12:01.616] [notice ] [bug_report ] [26508:26480] [60E748:  95]  - valid package type found in [send]: 0
+[2026-06-30 09:12:01.616] [notice ] [bug_report ] [26508:26480] [60E748:  95]  - valid package type found in [send]: 2
+[2026-06-30 09:12:01.616] [notice ] [bug_report ] [26508:26480] [60E748: 120]  - setting [product] to 90
+[2026-06-30 09:12:01.616] [notice ] [bug_report ] [26508:26480] [60E748: 120]  - setting [programpath] to D:\nvluan3\GithubApp\ccsetup631
+[2026-06-30 09:12:01.616] [notice ] [bug_report ] [26508:26480] [60E748: 120]  - setting [version] to 6.41.0.11567
+[2026-06-30 09:12:01.616] [notice ] [bug_report ] [26508:26480] [60E748: 120]  - setting [guid] to 쉐㝬ƫ
+[2026-06-30 09:12:01.617] [notice ] [bug_report ] [26508:26480] [60E748: 115]  - setting [silent]
+[2026-06-30 09:12:01.617] [notice ] [bug_report ] [26508:26480] [60E748: 149]  - setting [path] to D:\nvluan3\GithubApp\ccsetup631\LOG
+[2026-06-30 09:12:01.666] [warning] [crashguard ] [26508:26480] [4AF4BF: 248] Process dumper doesn't exist in path 'D:\nvluan3\GithubApp\ccsetup631\avDump.exe'.
+[2026-06-30 09:12:01.764] [warning] [ini_access ] [26508:26480] [C83FCF: 198] failed to read ini file D:\nvluan3\GithubApp\ccsetup631\settings.ini
+                                                                              Exception: couldn't open file
+                                                                              Code: 0x00000002 (2)
+[2026-06-30 09:12:01.766] [notice ] [crashguard ] [26508:26724] [FF32C0: 223] Process monitoring installed.
+[2026-06-30 09:12:01.770] [notice ] [bug_report ] [26508:26480] [60E748: 399] Processing package type (0)
+[2026-06-30 09:12:01.815] [notice ] [bug_report ] [26508:26480] [8BAFB8: 100] {PackageType_0} Done submitting dumps with result: 1
+[2026-06-30 09:12:01.815] [notice ] [bug_report ] [26508:26480] [60E748: 399] Processing package type (2)
+[2026-06-30 09:12:01.816] [error  ] [bug_report ] [26508:26480] [6B2A78: 115] {PackageType_2::LogFilesWithReport-90-6.41.0.11567} Error while attaching content 2
+                                                                              Exception: Unable to enumerate directory 'C:\ProgramData\Piriform\*'!
+                                                                              Code: 0x00000003 (3)
+[2026-06-30 09:12:01.816] [error  ] [bug_report ] [26508:26480] [6B2A78: 115] {PackageType_2::LogFilesWithReport-90-6.41.0.11567} Error while attaching content 4
+                                                                              Exception: Unable to enumerate directory 'C:\ProgramData\Piriform\Subscriptions\*'!
+                                                                              Code: 0x00000003 (3)
+[2026-06-30 09:12:01.839] [notice ] [bug_report ] [26508:26480] [451BD4:  57] {PackageType_2::LogFilesWithReport-90-6.41.0.11567} About to submit payload of type (2.102)
+[2026-06-30 09:12:01.839] [warning] [sb         ] [26508:26480] [AF8487:  22] {PackageType_2::LogFilesWithReport-90-6.41.0.11567} Couldn't get installation info.
+[2026-06-30 09:12:01.839] [warning] [sb         ] [26508:26480] [AF8487:  34] {PackageType_2::LogFilesWithReport-90-6.41.0.11567} Couldn't get setting 'avdef://config/Common/VersionType', failed with error code 3
+[2026-06-30 09:12:01.839] [warning] [sb         ] [26508:26480] [AF8487:  89] {PackageType_2::LogFilesWithReport-90-6.41.0.11567} InitAvastIdentity was not able to get running program version
+[2026-06-30 09:12:02.965] [warning] [bug_report ] [26508:26480] [451BD4: 129] {PackageType_2::LogFilesWithReport-90-6.41.0.11567} Streamback submitting failed.
+                                                                              Exception: Request failed with status code: 500, reason 'Internal Server Error'
+                                                                              Code: 0x000001f4 (500)
+[2026-06-30 09:12:02.965] [notice ] [bug_report ] [26508:26480] [8BAFB8: 170] {PackageType_2::LogFilesWithReport-90-6.41.0.11567} Payload was NOT submitted
+[2026-06-30 09:12:02.965] [notice ] [bug_report ] [26508:26480] [60E748: 462] Package type '0' reports result: 0
+[2026-06-30 09:12:02.965] [notice ] [bug_report ] [26508:26480] [60E748: 462] Package type '2' reports result: 5
+[2026-06-30 09:12:02.965] [notice ] [bug_report ] [26508:26480] [60E748: 466] BugReport is finished with: [5].
+[2026-07-01 09:12:01.600] [notice ] [bug_report ] [26244:19920] [60E748: 313] BugReport started.
+[2026-07-01 09:12:01.600] [notice ] [bug_report ] [26244:19920] [60E748:  95]  - valid package type found in [send]: 0
+[2026-07-01 09:12:01.600] [notice ] [bug_report ] [26244:19920] [60E748:  95]  - valid package type found in [send]: 2
+[2026-07-01 09:12:01.600] [notice ] [bug_report ] [26244:19920] [60E748: 120]  - setting [product] to 90
+[2026-07-01 09:12:01.600] [notice ] [bug_report ] [26244:19920] [60E748: 120]  - setting [programpath] to D:\nvluan3\GithubApp\ccsetup631
+[2026-07-01 09:12:01.600] [notice ] [bug_report ] [26244:19920] [60E748: 120]  - setting [version] to 6.41.0.11567
+[2026-07-01 09:12:01.600] [notice ] [bug_report ] [26244:19920] [60E748: 120]  - setting [guid] to 쉐㝬ƫ
+[2026-07-01 09:12:01.600] [notice ] [bug_report ] [26244:19920] [60E748: 115]  - setting [silent]
+[2026-07-01 09:12:01.600] [notice ] [bug_report ] [26244:19920] [60E748: 149]  - setting [path] to D:\nvluan3\GithubApp\ccsetup631\LOG
+[2026-07-01 09:12:01.607] [warning] [crashguard ] [26244:19920] [4AF4BF: 248] Process dumper doesn't exist in path 'D:\nvluan3\GithubApp\ccsetup631\avDump.exe'.
+[2026-07-01 09:12:01.618] [notice ] [crashguard ] [26244:13148] [FF32C0: 223] Process monitoring installed.
+[2026-07-01 09:12:01.627] [notice ] [bug_report ] [26244:19920] [60E748: 399] Processing package type (0)
+[2026-07-01 09:12:01.667] [notice ] [bug_report ] [26244:19920] [8BAFB8: 100] {PackageType_0} Done submitting dumps with result: 1
+[2026-07-01 09:12:01.667] [notice ] [bug_report ] [26244:19920] [60E748: 399] Processing package type (2)
+[2026-07-01 09:12:01.667] [error  ] [bug_report ] [26244:19920] [6B2A78: 115] {PackageType_2::LogFilesWithReport-90-6.41.0.11567} Error while attaching content 2
+                                                                              Exception: Unable to enumerate directory 'C:\ProgramData\Piriform\*'!
+                                                                              Code: 0x00000003 (3)
+[2026-07-01 09:12:01.667] [error  ] [bug_report ] [26244:19920] [6B2A78: 115] {PackageType_2::LogFilesWithReport-90-6.41.0.11567} Error while attaching content 4
+                                                                              Exception: Unable to enumerate directory 'C:\ProgramData\Piriform\Subscriptions\*'!
+                                                                              Code: 0x00000003 (3)
+[2026-07-01 09:12:01.667] [notice ] [bug_report ] [26244:19920] [451BD4:  57] {PackageType_2::LogFilesWithReport-90-6.41.0.11567} About to submit payload of type (2.102)
+[2026-07-01 09:12:01.669] [warning] [sb         ] [26244:19920] [AF8487:  22] {PackageType_2::LogFilesWithReport-90-6.41.0.11567} Couldn't get installation info.
+[2026-07-01 09:12:01.669] [warning] [sb         ] [26244:19920] [AF8487:  34] {PackageType_2::LogFilesWithReport-90-6.41.0.11567} Couldn't get setting 'avdef://config/Common/VersionType', failed with error code 3
+[2026-07-01 09:12:01.669] [warning] [sb         ] [26244:19920] [AF8487:  89] {PackageType_2::LogFilesWithReport-90-6.41.0.11567} InitAvastIdentity was not able to get running program version
+[2026-07-01 09:12:02.844] [warning] [bug_report ] [26244:19920] [451BD4: 129] {PackageType_2::LogFilesWithReport-90-6.41.0.11567} Streamback submitting failed.
+                                                                              Exception: Request failed with status code: 500, reason 'Internal Server Error'
+                                                                              Code: 0x000001f4 (500)
+[2026-07-01 09:12:02.844] [notice ] [bug_report ] [26244:19920] [8BAFB8: 170] {PackageType_2::LogFilesWithReport-90-6.41.0.11567} Payload was NOT submitted
+[2026-07-01 09:12:02.859] [notice ] [bug_report ] [26244:19920] [60E748: 462] Package type '0' reports result: 0
+[2026-07-01 09:12:02.859] [notice ] [bug_report ] [26244:19920] [60E748: 462] Package type '2' reports result: 5
+[2026-07-01 09:12:02.859] [notice ] [bug_report ] [26244:19920] [60E748: 466] BugReport is finished with: [5].
+[2026-07-02 09:12:01.608] [notice ] [bug_report ] [ 9828:  388] [60E748: 313] BugReport started.
+[2026-07-02 09:12:01.608] [notice ] [bug_report ] [ 9828:  388] [60E748:  95]  - valid package type found in [send]: 0
+[2026-07-02 09:12:01.609] [notice ] [bug_report ] [ 9828:  388] [60E748:  95]  - valid package type found in [send]: 2
+[2026-07-02 09:12:01.609] [notice ] [bug_report ] [ 9828:  388] [60E748: 120]  - setting [product] to 90
+[2026-07-02 09:12:01.609] [notice ] [bug_report ] [ 9828:  388] [60E748: 120]  - setting [programpath] to D:\nvluan3\GithubApp\ccsetup631
+[2026-07-02 09:12:01.609] [notice ] [bug_report ] [ 9828:  388] [60E748: 120]  - setting [guid] to 쉐㝬ƫ
+[2026-07-02 09:12:01.609] [notice ] [bug_report ] [ 9828:  388] [60E748: 120]  - setting [version] to 6.41.0.11567
+[2026-07-02 09:12:01.609] [notice ] [bug_report ] [ 9828:  388] [60E748: 115]  - setting [silent]
+[2026-07-02 09:12:01.615] [warning] [crashguard ] [ 9828:  388] [4AF4BF: 248] Process dumper doesn't exist in path 'D:\nvluan3\GithubApp\ccsetup631\avDump.exe'.
+[2026-07-02 09:12:01.609] [notice ] [bug_report ] [ 9828:  388] [60E748: 149]  - setting [path] to D:\nvluan3\GithubApp\ccsetup631\LOG
+[2026-07-02 09:12:01.618] [notice ] [crashguard ] [ 9828:26316] [FF32C0: 223] Process monitoring installed.
+[2026-07-02 09:12:01.621] [notice ] [bug_report ] [ 9828:  388] [60E748: 399] Processing package type (0)
+[2026-07-02 09:12:01.673] [notice ] [bug_report ] [ 9828:  388] [8BAFB8: 100] {PackageType_0} Done submitting dumps with result: 1
+[2026-07-02 09:12:01.673] [notice ] [bug_report ] [ 9828:  388] [60E748: 399] Processing package type (2)
+[2026-07-02 09:12:01.673] [error  ] [bug_report ] [ 9828:  388] [6B2A78: 115] {PackageType_2::LogFilesWithReport-90-6.41.0.11567} Error while attaching content 2
+                                                                              Exception: Unable to enumerate directory 'C:\ProgramData\Piriform\*'!
+                                                                              Code: 0x00000003 (3)
+[2026-07-02 09:12:01.673] [error  ] [bug_report ] [ 9828:  388] [6B2A78: 115] {PackageType_2::LogFilesWithReport-90-6.41.0.11567} Error while attaching content 4
+                                                                              Exception: Unable to enumerate directory 'C:\ProgramData\Piriform\Subscriptions\*'!
+                                                                              Code: 0x00000003 (3)
+[2026-07-02 09:12:01.674] [notice ] [bug_report ] [ 9828:  388] [451BD4:  57] {PackageType_2::LogFilesWithReport-90-6.41.0.11567} About to submit payload of type (2.102)
+[2026-07-02 09:12:01.674] [warning] [sb         ] [ 9828:  388] [AF8487:  22] {PackageType_2::LogFilesWithReport-90-6.41.0.11567} Couldn't get installation info.
+[2026-07-02 09:12:01.675] [warning] [sb         ] [ 9828:  388] [AF8487:  34] {PackageType_2::LogFilesWithReport-90-6.41.0.11567} Couldn't get setting 'avdef://config/Common/VersionType', failed with error code 3
+[2026-07-02 09:12:01.675] [warning] [sb         ] [ 9828:  388] [AF8487:  89] {PackageType_2::LogFilesWithReport-90-6.41.0.11567} InitAvastIdentity was not able to get running program version
+[2026-07-02 09:12:02.898] [warning] [bug_report ] [ 9828:  388] [451BD4: 129] {PackageType_2::LogFilesWithReport-90-6.41.0.11567} Streamback submitting failed.
+                                                                              Exception: Request failed with status code: 500, reason 'Internal Server Error'
+                                                                              Code: 0x000001f4 (500)
+[2026-07-02 09:12:02.916] [notice ] [bug_report ] [ 9828:  388] [8BAFB8: 170] {PackageType_2::LogFilesWithReport-90-6.41.0.11567} Payload was NOT submitted
+[2026-07-02 09:12:02.916] [notice ] [bug_report ] [ 9828:  388] [60E748: 462] Package type '0' reports result: 0
+[2026-07-02 09:12:02.916] [notice ] [bug_report ] [ 9828:  388] [60E748: 462] Package type '2' reports result: 5
+[2026-07-02 09:12:02.916] [notice ] [bug_report ] [ 9828:  388] [60E748: 466] BugReport is finished with: [5].
+[2026-07-03 09:12:01.600] [notice ] [bug_report ] [32032:28552] [60E748: 313] BugReport started.
+[2026-07-03 09:12:01.600] [notice ] [bug_report ] [32032:28552] [60E748:  95]  - valid package type found in [send]: 0
+[2026-07-03 09:12:01.601] [notice ] [bug_report ] [32032:28552] [60E748:  95]  - valid package type found in [send]: 2
+[2026-07-03 09:12:01.601] [notice ] [bug_report ] [32032:28552] [60E748: 120]  - setting [product] to 90
+[2026-07-03 09:12:01.601] [notice ] [bug_report ] [32032:28552] [60E748: 120]  - setting [programpath] to D:\nvluan3\GithubApp\ccsetup631
+[2026-07-03 09:12:01.601] [notice ] [bug_report ] [32032:28552] [60E748: 120]  - setting [version] to 6.41.0.11567
+[2026-07-03 09:12:01.601] [notice ] [bug_report ] [32032:28552] [60E748: 120]  - setting [guid] to 쉐㝬ƫ
+[2026-07-03 09:12:01.601] [notice ] [bug_report ] [32032:28552] [60E748: 115]  - setting [silent]
+[2026-07-03 09:12:01.601] [notice ] [bug_report ] [32032:28552] [60E748: 149]  - setting [path] to D:\nvluan3\GithubApp\ccsetup631\LOG
+[2026-07-03 09:12:01.606] [warning] [crashguard ] [32032:28552] [4AF4BF: 248] Process dumper doesn't exist in path 'D:\nvluan3\GithubApp\ccsetup631\avDump.exe'.
+[2026-07-03 09:12:01.608] [notice ] [crashguard ] [32032:16464] [FF32C0: 223] Process monitoring installed.
+[2026-07-03 09:12:01.609] [notice ] [bug_report ] [32032:28552] [60E748: 399] Processing package type (0)
+[2026-07-03 09:12:01.633] [notice ] [bug_report ] [32032:28552] [8BAFB8: 100] {PackageType_0} Done submitting dumps with result: 1
+[2026-07-03 09:12:01.633] [notice ] [bug_report ] [32032:28552] [60E748: 399] Processing package type (2)
+[2026-07-03 09:12:01.633] [notice ] [bug_report ] [32032:28552] [6B2A78: 330] {PackageType_2::LogFilesWithReport-90-6.41.0.11567} Too many failures sending logs in this interval, skipping...
+[2026-07-03 09:12:01.633] [notice ] [bug_report ] [32032:28552] [8BAFB8: 176] {PackageType_2::LogFilesWithReport-90-6.41.0.11567} Payload was skipped due to readiness status: 3
+[2026-07-03 09:12:01.634] [notice ] [bug_report ] [32032:28552] [60E748: 462] Package type '0' reports result: 0
+[2026-07-03 09:12:01.634] [notice ] [bug_report ] [32032:28552] [60E748: 462] Package type '2' reports result: 5
+[2026-07-03 09:12:01.634] [notice ] [bug_report ] [32032:28552] [60E748: 466] BugReport is finished with: [5].
+[2026-07-04 09:12:01.605] [notice ] [bug_report ] [ 5652:31620] [60E748: 313] BugReport started.
+[2026-07-04 09:12:01.605] [notice ] [bug_report ] [ 5652:31620] [60E748:  95]  - valid package type found in [send]: 0
+[2026-07-04 09:12:01.605] [notice ] [bug_report ] [ 5652:31620] [60E748:  95]  - valid package type found in [send]: 2
+[2026-07-04 09:12:01.605] [notice ] [bug_report ] [ 5652:31620] [60E748: 120]  - setting [programpath] to D:\nvluan3\GithubApp\ccsetup631
+[2026-07-04 09:12:01.605] [notice ] [bug_report ] [ 5652:31620] [60E748: 120]  - setting [product] to 90
+[2026-07-04 09:12:01.605] [notice ] [bug_report ] [ 5652:31620] [60E748: 120]  - setting [version] to 6.41.0.11567
+[2026-07-04 09:12:01.607] [notice ] [bug_report ] [ 5652:31620] [60E748: 115]  - setting [silent]
+[2026-07-04 09:12:01.605] [notice ] [bug_report ] [ 5652:31620] [60E748: 120]  - setting [guid] to 쉐㝬ƫ
+[2026-07-04 09:12:01.607] [notice ] [bug_report ] [ 5652:31620] [60E748: 149]  - setting [path] to D:\nvluan3\GithubApp\ccsetup631\LOG
+[2026-07-04 09:12:01.612] [warning] [crashguard ] [ 5652:31620] [4AF4BF: 248] Process dumper doesn't exist in path 'D:\nvluan3\GithubApp\ccsetup631\avDump.exe'.
+[2026-07-04 09:12:01.615] [notice ] [crashguard ] [ 5652:26068] [FF32C0: 223] Process monitoring installed.
+[2026-07-04 09:12:01.616] [notice ] [bug_report ] [ 5652:31620] [60E748: 399] Processing package type (0)
+[2026-07-04 09:12:01.681] [notice ] [bug_report ] [ 5652:31620] [8BAFB8: 100] {PackageType_0} Done submitting dumps with result: 1
+[2026-07-04 09:12:01.681] [notice ] [bug_report ] [ 5652:31620] [60E748: 399] Processing package type (2)
+[2026-07-04 09:12:01.681] [notice ] [bug_report ] [ 5652:31620] [6B2A78: 330] {PackageType_2::LogFilesWithReport-90-6.41.0.11567} Too many failures sending logs in this interval, skipping...
+[2026-07-04 09:12:01.681] [notice ] [bug_report ] [ 5652:31620] [8BAFB8: 176] {PackageType_2::LogFilesWithReport-90-6.41.0.11567} Payload was skipped due to readiness status: 3
+[2026-07-04 09:12:01.681] [notice ] [bug_report ] [ 5652:31620] [60E748: 462] Package type '0' reports result: 0
+[2026-07-04 09:12:01.681] [notice ] [bug_report ] [ 5652:31620] [60E748: 462] Package type '2' reports result: 5
+[2026-07-04 09:12:01.681] [notice ] [bug_report ] [ 5652:31620] [60E748: 466] BugReport is finished with: [5].
+[2026-07-06 09:12:02.019] [notice ] [bug_report ] [25608: 2544] [60E748: 313] BugReport started.
+[2026-07-06 09:12:02.020] [notice ] [bug_report ] [25608: 2544] [60E748:  95]  - valid package type found in [send]: 0
+[2026-07-06 09:12:02.020] [notice ] [bug_report ] [25608: 2544] [60E748:  95]  - valid package type found in [send]: 2
+[2026-07-06 09:12:02.020] [notice ] [bug_report ] [25608: 2544] [60E748: 120]  - setting [product] to 90
+[2026-07-06 09:12:02.020] [notice ] [bug_report ] [25608: 2544] [60E748: 120]  - setting [programpath] to D:\nvluan3\GithubApp\ccsetup631
+[2026-07-06 09:12:02.020] [notice ] [bug_report ] [25608: 2544] [60E748: 120]  - setting [version] to 6.41.0.11567
+[2026-07-06 09:12:02.020] [notice ] [bug_report ] [25608: 2544] [60E748: 120]  - setting [guid] to 쉐㝬ƫ
+[2026-07-06 09:12:02.021] [notice ] [bug_report ] [25608: 2544] [60E748: 115]  - setting [silent]
+[2026-07-06 09:12:02.021] [notice ] [bug_report ] [25608: 2544] [60E748: 149]  - setting [path] to D:\nvluan3\GithubApp\ccsetup631\LOG
+[2026-07-06 09:12:02.031] [warning] [crashguard ] [25608: 2544] [4AF4BF: 248] Process dumper doesn't exist in path 'D:\nvluan3\GithubApp\ccsetup631\avDump.exe'.
+[2026-07-06 09:12:02.062] [notice ] [crashguard ] [25608:25736] [FF32C0: 223] Process monitoring installed.
+[2026-07-06 09:12:02.095] [notice ] [bug_report ] [25608: 2544] [60E748: 399] Processing package type (0)
+[2026-07-06 09:12:02.138] [notice ] [bug_report ] [25608: 2544] [8BAFB8: 100] {PackageType_0} Done submitting dumps with result: 1
+[2026-07-06 09:12:02.138] [notice ] [bug_report ] [25608: 2544] [60E748: 399] Processing package type (2)
+[2026-07-06 09:12:02.139] [notice ] [bug_report ] [25608: 2544] [6B2A78: 330] {PackageType_2::LogFilesWithReport-90-6.41.0.11567} Too many failures sending logs in this interval, skipping...
+[2026-07-06 09:12:02.139] [notice ] [bug_report ] [25608: 2544] [8BAFB8: 176] {PackageType_2::LogFilesWithReport-90-6.41.0.11567} Payload was skipped due to readiness status: 3
+[2026-07-06 09:12:02.139] [notice ] [bug_report ] [25608: 2544] [60E748: 462] Package type '0' reports result: 0
+[2026-07-06 09:12:02.139] [notice ] [bug_report ] [25608: 2544] [60E748: 462] Package type '2' reports result: 5
+[2026-07-06 09:12:02.139] [notice ] [bug_report ] [25608: 2544] [60E748: 466] BugReport is finished with: [5].
+[2026-07-07 09:12:01.993] [notice ] [bug_report ] [11824:33728] [60E748: 313] BugReport started.
+[2026-07-07 09:12:01.994] [notice ] [bug_report ] [11824:33728] [60E748:  95]  - valid package type found in [send]: 2
+[2026-07-07 09:12:01.994] [notice ] [bug_report ] [11824:33728] [60E748:  95]  - valid package type found in [send]: 0
+[2026-07-07 09:12:01.994] [notice ] [bug_report ] [11824:33728] [60E748: 120]  - setting [programpath] to D:\nvluan3\GithubApp\ccsetup631
+[2026-07-07 09:12:01.994] [notice ] [bug_report ] [11824:33728] [60E748: 120]  - setting [product] to 90
+[2026-07-07 09:12:01.994] [notice ] [bug_report ] [11824:33728] [60E748: 120]  - setting [version] to 6.41.0.11567
+[2026-07-07 09:12:01.994] [notice ] [bug_report ] [11824:33728] [60E748: 120]  - setting [guid] to 쉐㝬ƫ
+[2026-07-07 09:12:01.995] [notice ] [bug_report ] [11824:33728] [60E748: 115]  - setting [silent]
+[2026-07-07 09:12:01.995] [notice ] [bug_report ] [11824:33728] [60E748: 149]  - setting [path] to D:\nvluan3\GithubApp\ccsetup631\LOG
+[2026-07-07 09:12:02.000] [warning] [crashguard ] [11824:33728] [4AF4BF: 248] Process dumper doesn't exist in path 'D:\nvluan3\GithubApp\ccsetup631\avDump.exe'.
+[2026-07-07 09:12:02.002] [notice ] [crashguard ] [11824:  420] [FF32C0: 223] Process monitoring installed.
+[2026-07-07 09:12:02.004] [notice ] [bug_report ] [11824:33728] [60E748: 399] Processing package type (0)
+[2026-07-07 09:12:02.067] [notice ] [bug_report ] [11824:33728] [8BAFB8: 100] {PackageType_0} Done submitting dumps with result: 1
+[2026-07-07 09:12:02.067] [notice ] [bug_report ] [11824:33728] [60E748: 399] Processing package type (2)
+[2026-07-07 09:12:02.067] [notice ] [bug_report ] [11824:33728] [6B2A78: 330] {PackageType_2::LogFilesWithReport-90-6.41.0.11567} Too many failures sending logs in this interval, skipping...
+[2026-07-07 09:12:02.067] [notice ] [bug_report ] [11824:33728] [8BAFB8: 176] {PackageType_2::LogFilesWithReport-90-6.41.0.11567} Payload was skipped due to readiness status: 3
+[2026-07-07 09:12:02.067] [notice ] [bug_report ] [11824:33728] [60E748: 462] Package type '0' reports result: 0
+[2026-07-07 09:12:02.067] [notice ] [bug_report ] [11824:33728] [60E748: 462] Package type '2' reports result: 5
+[2026-07-07 09:12:02.067] [notice ] [bug_report ] [11824:33728] [60E748: 466] BugReport is finished with: [5].
+[2026-07-08 09:12:02.018] [notice ] [bug_report ] [ 5896:26924] [60E748: 313] BugReport started.
+[2026-07-08 09:12:02.018] [notice ] [bug_report ] [ 5896:26924] [60E748:  95]  - valid package type found in [send]: 0
+[2026-07-08 09:12:02.018] [notice ] [bug_report ] [ 5896:26924] [60E748:  95]  - valid package type found in [send]: 2
+[2026-07-08 09:12:02.018] [notice ] [bug_report ] [ 5896:26924] [60E748: 120]  - setting [product] to 90
+[2026-07-08 09:12:02.018] [notice ] [bug_report ] [ 5896:26924] [60E748: 120]  - setting [programpath] to D:\nvluan3\GithubApp\ccsetup631
+[2026-07-08 09:12:02.018] [notice ] [bug_report ] [ 5896:26924] [60E748: 120]  - setting [version] to 6.41.0.11567
+[2026-07-08 09:12:02.018] [notice ] [bug_report ] [ 5896:26924] [60E748: 120]  - setting [guid] to 쉐㝬ƫ
+[2026-07-08 09:12:02.019] [notice ] [bug_report ] [ 5896:26924] [60E748: 115]  - setting [silent]
+[2026-07-08 09:12:02.019] [notice ] [bug_report ] [ 5896:26924] [60E748: 149]  - setting [path] to D:\nvluan3\GithubApp\ccsetup631\LOG
+[2026-07-08 09:12:02.025] [warning] [crashguard ] [ 5896:26924] [4AF4BF: 248] Process dumper doesn't exist in path 'D:\nvluan3\GithubApp\ccsetup631\avDump.exe'.
+[2026-07-08 09:12:02.028] [notice ] [crashguard ] [ 5896:10816] [FF32C0: 223] Process monitoring installed.
+[2026-07-08 09:12:02.029] [notice ] [bug_report ] [ 5896:26924] [60E748: 399] Processing package type (0)
+[2026-07-08 09:12:02.063] [notice ] [bug_report ] [ 5896:26924] [8BAFB8: 100] {PackageType_0} Done submitting dumps with result: 1
+[2026-07-08 09:12:02.063] [notice ] [bug_report ] [ 5896:26924] [60E748: 399] Processing package type (2)
+[2026-07-08 09:12:02.066] [error  ] [bug_report ] [ 5896:26924] [6B2A78: 115] {PackageType_2::LogFilesWithReport-90-6.41.0.11567} Error while attaching content 2
+                                                                              Exception: Unable to enumerate directory 'C:\ProgramData\Piriform\*'!
+                                                                              Code: 0x00000003 (3)
+[2026-07-08 09:12:02.066] [error  ] [bug_report ] [ 5896:26924] [6B2A78: 115] {PackageType_2::LogFilesWithReport-90-6.41.0.11567} Error while attaching content 4
+                                                                              Exception: Unable to enumerate directory 'C:\ProgramData\Piriform\Subscriptions\*'!
+                                                                              Code: 0x00000003 (3)
+[2026-07-08 09:12:02.081] [notice ] [bug_report ] [ 5896:26924] [451BD4:  57] {PackageType_2::LogFilesWithReport-90-6.41.0.11567} About to submit payload of type (2.102)
+[2026-07-08 09:12:02.084] [warning] [sb         ] [ 5896:26924] [AF8487:  22] {PackageType_2::LogFilesWithReport-90-6.41.0.11567} Couldn't get installation info.
+[2026-07-08 09:12:02.084] [warning] [sb         ] [ 5896:26924] [AF8487:  34] {PackageType_2::LogFilesWithReport-90-6.41.0.11567} Couldn't get setting 'avdef://config/Common/VersionType', failed with error code 3
+[2026-07-08 09:12:02.086] [warning] [sb         ] [ 5896:26924] [AF8487:  89] {PackageType_2::LogFilesWithReport-90-6.41.0.11567} InitAvastIdentity was not able to get running program version
+[2026-07-08 09:12:03.346] [warning] [bug_report ] [ 5896:26924] [451BD4: 129] {PackageType_2::LogFilesWithReport-90-6.41.0.11567} Streamback submitting failed.
+                                                                              Exception: Request failed with status code: 500, reason 'Internal Server Error'
+                                                                              Code: 0x000001f4 (500)
+[2026-07-08 09:12:03.346] [notice ] [bug_report ] [ 5896:26924] [8BAFB8: 170] {PackageType_2::LogFilesWithReport-90-6.41.0.11567} Payload was NOT submitted
+[2026-07-08 09:12:03.347] [notice ] [bug_report ] [ 5896:26924] [60E748: 462] Package type '0' reports result: 0
+[2026-07-08 09:12:03.347] [notice ] [bug_report ] [ 5896:26924] [60E748: 462] Package type '2' reports result: 5
+[2026-07-08 09:12:03.347] [notice ] [bug_report ] [ 5896:26924] [60E748: 466] BugReport is finished with: [5].
+[2026-07-09 09:12:02.029] [notice ] [bug_report ] [14288:29728] [60E748: 313] BugReport started.
+[2026-07-09 09:12:02.029] [notice ] [bug_report ] [14288:29728] [60E748:  95]  - valid package type found in [send]: 0
+[2026-07-09 09:12:02.029] [notice ] [bug_report ] [14288:29728] [60E748:  95]  - valid package type found in [send]: 2
+[2026-07-09 09:12:02.029] [notice ] [bug_report ] [14288:29728] [60E748: 120]  - setting [product] to 90
+[2026-07-09 09:12:02.029] [notice ] [bug_report ] [14288:29728] [60E748: 120]  - setting [programpath] to D:\nvluan3\GithubApp\ccsetup631
+[2026-07-09 09:12:02.029] [notice ] [bug_report ] [14288:29728] [60E748: 120]  - setting [version] to 6.41.0.11567
+[2026-07-09 09:12:02.029] [notice ] [bug_report ] [14288:29728] [60E748: 120]  - setting [guid] to 쉐㝬ƫ
+[2026-07-09 09:12:02.030] [notice ] [bug_report ] [14288:29728] [60E748: 149]  - setting [path] to D:\nvluan3\GithubApp\ccsetup631\LOG
+[2026-07-09 09:12:02.030] [notice ] [bug_report ] [14288:29728] [60E748: 115]  - setting [silent]
+[2026-07-09 09:12:02.035] [warning] [crashguard ] [14288:29728] [4AF4BF: 248] Process dumper doesn't exist in path 'D:\nvluan3\GithubApp\ccsetup631\avDump.exe'.
+[2026-07-09 09:12:02.040] [notice ] [bug_report ] [14288:29728] [60E748: 399] Processing package type (0)
+[2026-07-09 09:12:02.038] [notice ] [crashguard ] [14288:24784] [FF32C0: 223] Process monitoring installed.
+[2026-07-09 09:12:02.089] [notice ] [bug_report ] [14288:29728] [8BAFB8: 100] {PackageType_0} Done submitting dumps with result: 1
+[2026-07-09 09:12:02.089] [notice ] [bug_report ] [14288:29728] [60E748: 399] Processing package type (2)
+[2026-07-09 09:12:02.090] [error  ] [bug_report ] [14288:29728] [6B2A78: 115] {PackageType_2::LogFilesWithReport-90-6.41.0.11567} Error while attaching content 2
+                                                                              Exception: Unable to enumerate directory 'C:\ProgramData\Piriform\*'!
+                                                                              Code: 0x00000003 (3)
+[2026-07-09 09:12:02.090] [error  ] [bug_report ] [14288:29728] [6B2A78: 115] {PackageType_2::LogFilesWithReport-90-6.41.0.11567} Error while attaching content 4
+                                                                              Exception: Unable to enumerate directory 'C:\ProgramData\Piriform\Subscriptions\*'!
+                                                                              Code: 0x00000003 (3)
+[2026-07-09 09:12:02.090] [notice ] [bug_report ] [14288:29728] [451BD4:  57] {PackageType_2::LogFilesWithReport-90-6.41.0.11567} About to submit payload of type (2.102)
+[2026-07-09 09:12:02.092] [warning] [sb         ] [14288:29728] [AF8487:  22] {PackageType_2::LogFilesWithReport-90-6.41.0.11567} Couldn't get installation info.
+[2026-07-09 09:12:02.092] [warning] [sb         ] [14288:29728] [AF8487:  34] {PackageType_2::LogFilesWithReport-90-6.41.0.11567} Couldn't get setting 'avdef://config/Common/VersionType', failed with error code 3
+[2026-07-09 09:12:02.092] [warning] [sb         ] [14288:29728] [AF8487:  89] {PackageType_2::LogFilesWithReport-90-6.41.0.11567} InitAvastIdentity was not able to get running program version
+[2026-07-09 09:12:03.266] [warning] [bug_report ] [14288:29728] [451BD4: 129] {PackageType_2::LogFilesWithReport-90-6.41.0.11567} Streamback submitting failed.
+                                                                              Exception: Request failed with status code: 500, reason 'Internal Server Error'
+                                                                              Code: 0x000001f4 (500)
+[2026-07-09 09:12:03.266] [notice ] [bug_report ] [14288:29728] [8BAFB8: 170] {PackageType_2::LogFilesWithReport-90-6.41.0.11567} Payload was NOT submitted
+[2026-07-09 09:12:03.266] [notice ] [bug_report ] [14288:29728] [60E748: 462] Package type '0' reports result: 0
+[2026-07-09 09:12:03.266] [notice ] [bug_report ] [14288:29728] [60E748: 462] Package type '2' reports result: 5
+[2026-07-09 09:12:03.266] [notice ] [bug_report ] [14288:29728] [60E748: 466] BugReport is finished with: [5].
+[2026-07-10 09:12:02.042] [notice ] [bug_report ] [19148:30032] [60E748: 313] BugReport started.
+[2026-07-10 09:12:02.042] [notice ] [bug_report ] [19148:30032] [60E748:  95]  - valid package type found in [send]: 0
+[2026-07-10 09:12:02.043] [notice ] [bug_report ] [19148:30032] [60E748:  95]  - valid package type found in [send]: 2
+[2026-07-10 09:12:02.043] [notice ] [bug_report ] [19148:30032] [60E748: 120]  - setting [product] to 90
+[2026-07-10 09:12:02.043] [notice ] [bug_report ] [19148:30032] [60E748: 120]  - setting [programpath] to D:\nvluan3\GithubApp\ccsetup631
+[2026-07-10 09:12:02.043] [notice ] [bug_report ] [19148:30032] [60E748: 120]  - setting [version] to 6.41.0.11567
+[2026-07-10 09:12:02.043] [notice ] [bug_report ] [19148:30032] [60E748: 120]  - setting [guid] to 쉐㝬ƫ
+[2026-07-10 09:12:02.043] [notice ] [bug_report ] [19148:30032] [60E748: 115]  - setting [silent]
+[2026-07-10 09:12:02.043] [notice ] [bug_report ] [19148:30032] [60E748: 149]  - setting [path] to D:\nvluan3\GithubApp\ccsetup631\LOG
+[2026-07-10 09:12:02.050] [warning] [crashguard ] [19148:30032] [4AF4BF: 248] Process dumper doesn't exist in path 'D:\nvluan3\GithubApp\ccsetup631\avDump.exe'.
+[2026-07-10 09:12:02.051] [notice ] [crashguard ] [19148:28296] [FF32C0: 223] Process monitoring installed.
+[2026-07-10 09:12:02.053] [notice ] [bug_report ] [19148:30032] [60E748: 399] Processing package type (0)
+[2026-07-10 09:12:02.089] [notice ] [bug_report ] [19148:30032] [8BAFB8: 100] {PackageType_0} Done submitting dumps with result: 1
+[2026-07-10 09:12:02.089] [notice ] [bug_report ] [19148:30032] [60E748: 399] Processing package type (2)
+[2026-07-10 09:12:02.090] [error  ] [bug_report ] [19148:30032] [6B2A78: 115] {PackageType_2::LogFilesWithReport-90-6.41.0.11567} Error while attaching content 2
+                                                                              Exception: Unable to enumerate directory 'C:\ProgramData\Piriform\*'!
+                                                                              Code: 0x00000003 (3)
+[2026-07-10 09:12:02.090] [error  ] [bug_report ] [19148:30032] [6B2A78: 115] {PackageType_2::LogFilesWithReport-90-6.41.0.11567} Error while attaching content 4
+                                                                              Exception: Unable to enumerate directory 'C:\ProgramData\Piriform\Subscriptions\*'!
+                                                                              Code: 0x00000003 (3)
+[2026-07-10 09:12:02.090] [notice ] [bug_report ] [19148:30032] [451BD4:  57] {PackageType_2::LogFilesWithReport-90-6.41.0.11567} About to submit payload of type (2.102)
+[2026-07-10 09:12:02.091] [warning] [sb         ] [19148:30032] [AF8487:  22] {PackageType_2::LogFilesWithReport-90-6.41.0.11567} Couldn't get installation info.
+[2026-07-10 09:12:02.092] [warning] [sb         ] [19148:30032] [AF8487:  34] {PackageType_2::LogFilesWithReport-90-6.41.0.11567} Couldn't get setting 'avdef://config/Common/VersionType', failed with error code 3
+[2026-07-10 09:12:02.092] [warning] [sb         ] [19148:30032] [AF8487:  89] {PackageType_2::LogFilesWithReport-90-6.41.0.11567} InitAvastIdentity was not able to get running program version
+[2026-07-10 09:12:03.270] [warning] [bug_report ] [19148:30032] [451BD4: 129] {PackageType_2::LogFilesWithReport-90-6.41.0.11567} Streamback submitting failed.
+                                                                              Exception: Request failed with status code: 500, reason 'Internal Server Error'
+                                                                              Code: 0x000001f4 (500)
+[2026-07-10 09:12:03.270] [notice ] [bug_report ] [19148:30032] [8BAFB8: 170] {PackageType_2::LogFilesWithReport-90-6.41.0.11567} Payload was NOT submitted
+[2026-07-10 09:12:03.270] [notice ] [bug_report ] [19148:30032] [60E748: 462] Package type '0' reports result: 0
+[2026-07-10 09:12:03.270] [notice ] [bug_report ] [19148:30032] [60E748: 462] Package type '2' reports result: 5
+[2026-07-10 09:12:03.270] [notice ] [bug_report ] [19148:30032] [60E748: 466] BugReport is finished with: [5].
+[2026-07-11 09:12:01.896] [notice ] [bug_report ] [24544:25028] [60E748: 313] BugReport started.
+[2026-07-11 09:12:01.897] [notice ] [bug_report ] [24544:25028] [60E748:  95]  - valid package type found in [send]: 0
+[2026-07-11 09:12:01.897] [notice ] [bug_report ] [24544:25028] [60E748:  95]  - valid package type found in [send]: 2
+[2026-07-11 09:12:01.897] [notice ] [bug_report ] [24544:25028] [60E748: 120]  - setting [product] to 90
+[2026-07-11 09:12:01.897] [notice ] [bug_report ] [24544:25028] [60E748: 120]  - setting [programpath] to D:\nvluan3\GithubApp\ccsetup631
+[2026-07-11 09:12:01.897] [notice ] [bug_report ] [24544:25028] [60E748: 120]  - setting [version] to 6.41.0.11567
+[2026-07-11 09:12:01.897] [notice ] [bug_report ] [24544:25028] [60E748: 120]  - setting [guid] to 쉐㝬ƫ
+[2026-07-11 09:12:01.897] [notice ] [bug_report ] [24544:25028] [60E748: 115]  - setting [silent]
+[2026-07-11 09:12:01.897] [notice ] [bug_report ] [24544:25028] [60E748: 149]  - setting [path] to D:\nvluan3\GithubApp\ccsetup631\LOG
+[2026-07-11 09:12:01.908] [warning] [crashguard ] [24544:25028] [4AF4BF: 248] Process dumper doesn't exist in path 'D:\nvluan3\GithubApp\ccsetup631\avDump.exe'.
+[2026-07-11 09:12:01.916] [notice ] [crashguard ] [24544:24720] [FF32C0: 223] Process monitoring installed.
+[2026-07-11 09:12:01.940] [notice ] [bug_report ] [24544:25028] [60E748: 399] Processing package type (0)
+[2026-07-11 09:12:01.983] [notice ] [bug_report ] [24544:25028] [8BAFB8: 100] {PackageType_0} Done submitting dumps with result: 1
+[2026-07-11 09:12:01.983] [notice ] [bug_report ] [24544:25028] [60E748: 399] Processing package type (2)
+[2026-07-11 09:12:01.983] [notice ] [bug_report ] [24544:25028] [6B2A78: 330] {PackageType_2::LogFilesWithReport-90-6.41.0.11567} Too many failures sending logs in this interval, skipping...
+[2026-07-11 09:12:01.983] [notice ] [bug_report ] [24544:25028] [8BAFB8: 176] {PackageType_2::LogFilesWithReport-90-6.41.0.11567} Payload was skipped due to readiness status: 3
+[2026-07-11 09:12:01.983] [notice ] [bug_report ] [24544:25028] [60E748: 462] Package type '0' reports result: 0
+[2026-07-11 09:12:01.983] [notice ] [bug_report ] [24544:25028] [60E748: 462] Package type '2' reports result: 5
+[2026-07-11 09:12:01.983] [notice ] [bug_report ] [24544:25028] [60E748: 466] BugReport is finished with: [5].

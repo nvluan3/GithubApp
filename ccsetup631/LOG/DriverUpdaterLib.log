@@ -34,3 +34,62 @@
 [2024-12-31 02:27:17.529] [info   ] [files      ] [18516:15672] [BA3800: 157] watch task for C:\Users\nvluan3\Downloads\ccsetup631\Data gracefully terminated
 [2024-12-31 02:27:17.641] [info   ] [log_module ] [18516:15672] [C72B9D:  31] LogModule is going to be destroyed.
 [2024-12-31 02:27:17.641] [info   ] [log_module ] [18516:15672] [C72B9D:  32] =====================================================================================================================
+[2026-06-29 09:13:00.134] [info   ] [settings   ] [10120: 3712] [9C0E0D: 405] paths.ini_store configuration is empty, settings ini store folder to asw::instup::GetDataDirectory.
+[2026-06-29 09:13:00.137] [info   ] [files      ] [10120: 3712] [BA3800: 221] watch task for D:\nvluan3\GithubApp\ccsetup631\\Setup started
+[2026-06-29 09:13:00.137] [warning] [ini_access ] [10120: 3712] [458A42: 187] failed to read ini file D:\nvluan3\GithubApp\ccsetup631\usercfg.ini
+                                                                              Exception: couldn't open file
+                                                                              Code: 0x00000002 (2)
+[2026-06-29 09:13:00.137] [info   ] [files      ] [10120: 3712] [BA3800: 221] watch task for D:\nvluan3\GithubApp\ccsetup631 started
+[2026-06-29 09:13:00.151] [info   ] [files      ] [10120: 3712] [BA3800: 141] watch task termination for D:\nvluan3\GithubApp\ccsetup631 requested
+[2026-06-29 09:13:00.151] [info   ] [files      ] [10120: 3712] [BA3800: 157] watch task for D:\nvluan3\GithubApp\ccsetup631 gracefully terminated
+[2026-06-29 09:13:00.151] [info   ] [files      ] [10120: 3712] [BA3800: 221] watch task for D:\nvluan3\GithubApp\ccsetup631\Setup started
+[2026-06-29 09:13:00.151] [info   ] [files      ] [10120: 3712] [BA3800: 141] watch task termination for D:\nvluan3\GithubApp\ccsetup631\\Setup requested
+[2026-06-29 09:13:00.151] [info   ] [files      ] [10120: 3712] [BA3800: 157] watch task for D:\nvluan3\GithubApp\ccsetup631\\Setup gracefully terminated
+[2026-06-29 09:13:00.151] [warning] [ini_access ] [10120: 3712] [458A42: 187] failed to read ini file D:\nvluan3\GithubApp\ccsetup631\Data\settings.ini
+                                                                              Exception: couldn't open file
+                                                                              Code: 0x00000002 (2)
+[2026-06-29 09:13:00.151] [info   ] [files      ] [10120: 3712] [BA3800: 221] watch task for D:\nvluan3\GithubApp\ccsetup631\Data started
+[2026-06-29 09:13:00.157] [info   ] [lic_setting] [10120: 3712] [50D22A: 203] ~/ZgWcJnVOY7P7OY/uxlZwK+nX3CT1SyOxv60LaoCQMvn9DxQqIFqhM3ksyi9BEHLuLcLIdLYKYvE6qgprEVMyrD4X1Cz9xrdgei1La1FTMaxsR59mclkhM7m
+[2026-06-29 09:13:00.161] [warning] [Burger     ] [10120: 3712] [1F2380: 178] [24.2.5234.0] [BurgerReporter.cpp] [178] asw::standalone_svc::BurgerReporter::RegisterRPC: Could not get RPC.
+[2026-06-29 09:13:00.161] [error  ] [Burger     ] [10120: 3712] [1F2380: 258] [24.2.5234.0] [BurgerReporter.cpp] [258] asw::standalone_svc::BurgerReporter::BurgerSwitch: Could not read property BURGER_SETTINGS_PANCAKE_HOSTNAME (0x00000003)
+[2026-06-29 09:13:00.164] [warning] [Burger     ] [10120: 3712] [1F2380: 261] [24.2.5234.0] [BurgerReporter.cpp] [261] asw::standalone_svc::BurgerReporter::BurgerSwitch: Analytics (Burger.v4) disabled (hostname: )
+[2026-06-29 09:13:00.165] [error  ] [Burger     ] [10120: 3712] [1F2380: 258] [24.2.5234.0] [BurgerReporter.cpp] [258] asw::standalone_svc::BurgerReporter::BurgerSwitch: Could not read property BURGER_SETTINGS_PANCAKE_HOSTNAME (0x00000003)
+[2026-06-29 09:13:00.165] [warning] [Burger     ] [10120: 3712] [1F2380: 261] [24.2.5234.0] [BurgerReporter.cpp] [261] asw::standalone_svc::BurgerReporter::BurgerSwitch: Analytics (Burger.v4) disabled (hostname: )
+[2026-06-29 09:13:00.165] [warning] [Burger     ] [10120: 3712] [1F2380: 178] [24.2.5234.0] [BurgerReporter.cpp] [178] asw::standalone_svc::BurgerReporter::RegisterRPC: Could not get RPC.
+[2026-06-29 09:13:00.188] [warning] [files      ] [10120: 6268] [BA3800: 255] D:\nvluan3\GithubApp\ccsetup631\Setup overlapped IO failed, error: 995.
+[2026-06-29 09:14:00.155] [warning] [ini_access ] [10120:20008] [458A42: 187] failed to read ini file D:\nvluan3\GithubApp\ccsetup631\Data\burger_client.ini
+                                                                              Exception: couldn't open file
+                                                                              Code: 0x00000002 (2)
+[2026-06-29 09:15:28.505] [info   ] [files      ] [10120:13096] [BA3800: 141] watch task termination for D:\nvluan3\GithubApp\ccsetup631\Setup requested
+[2026-06-29 09:15:28.505] [info   ] [files      ] [10120:13096] [BA3800: 157] watch task for D:\nvluan3\GithubApp\ccsetup631\Setup gracefully terminated
+[2026-06-29 09:15:28.505] [info   ] [files      ] [10120:13096] [BA3800: 141] watch task termination for D:\nvluan3\GithubApp\ccsetup631\Data requested
+[2026-06-29 09:15:28.505] [info   ] [files      ] [10120:13096] [BA3800: 157] watch task for D:\nvluan3\GithubApp\ccsetup631\Data gracefully terminated
+[2026-06-29 09:15:28.606] [info   ] [log_module ] [10120:13096] [C72B9D:  31] LogModule is going to be destroyed.
+[2026-06-29 09:15:28.606] [info   ] [log_module ] [10120:13096] [C72B9D:  32] =====================================================================================================================
+[2026-06-29 09:23:20.002] [info   ] [DULib      ] [15952:19596] [31A92A:  69] [*ater::`anonymous-namespace'::InitLogger] Logger initialized.
+[2026-06-29 09:23:20.016] [info   ] [ini_access ] [15952:19596] [280E7A:  91] ini accessor for file D:\nvluan3\GithubApp\ccsetup631\Data\servers.def created
+[2026-06-29 09:23:20.017] [warning] [ini_access ] [15952:19596] [280E7A: 198] failed to read ini file D:\nvluan3\GithubApp\ccsetup631\Data\config.def
+                                                                              Exception: couldn't open file
+                                                                              Code: 0x00000002 (2)
+[2026-06-29 09:23:20.017] [info   ] [files      ] [15952:19596] [069D4A: 221] watch task for D:\nvluan3\GithubApp\ccsetup631\Data started
+[2026-06-29 09:23:20.018] [warning] [ini_access ] [15952:19596] [280E7A: 198] failed to read ini file D:\nvluan3\GithubApp\ccsetup631\Data\settings.ini
+                                                                              Exception: couldn't open file
+                                                                              Code: 0x00000002 (2)
+[2026-06-29 09:23:20.019] [warning] [ini_access ] [15952:19596] [280E7A: 198] failed to read ini file D:\nvluan3\GithubApp\ccsetup631\Data\setup.ini
+                                                                              Exception: couldn't open file
+                                                                              Code: 0x00000002 (2)
+[2026-06-29 09:23:20.021] [info   ] [lic_setting] [15952:19596] [04E793: 203] ~tLoJM7DSKYLP+K8iuUtcwK+iGmGPmymIz+2vK6sZTtG0uxEp3PgJs5urpSCxHkvGsroRdp/PeMnC6KopvwVK1/O3EH7Qmwmo7dv8bL0YTtbztxx/mdokgtOlpSOz
+[2026-06-29 09:23:20.021] [warning] [lic_curl   ] [15952:19596] [A0917B: 199] invalid resolve fallbacks
+[2026-06-29 09:23:20.023] [warning] [Burger     ] [15952:19596] [B43A58: 190] [*dalone_svc::BurgerReporter::RegisterRPC] Could not get RPC.
+[2026-06-29 09:23:20.023] [error  ] [Burger     ] [15952:19596] [B43A58: 270] [*alone_svc::BurgerReporter::BurgerSwitch] Could not read property BURGER_SETTINGS_PANCAKE_HOSTNAME (0x00000003)
+[2026-06-29 09:23:20.023] [warning] [Burger     ] [15952:19596] [B43A58: 273] [*alone_svc::BurgerReporter::BurgerSwitch] Analytics (Burger.v4) disabled (hostname: )
+[2026-06-29 09:23:20.023] [error  ] [Burger     ] [15952:19596] [B43A58: 270] [*alone_svc::BurgerReporter::BurgerSwitch] Could not read property BURGER_SETTINGS_PANCAKE_HOSTNAME (0x00000003)
+[2026-06-29 09:23:20.023] [warning] [Burger     ] [15952:19596] [B43A58: 273] [*alone_svc::BurgerReporter::BurgerSwitch] Analytics (Burger.v4) disabled (hostname: )
+[2026-06-29 09:23:20.023] [warning] [Burger     ] [15952:19596] [B43A58: 190] [*dalone_svc::BurgerReporter::RegisterRPC] Could not get RPC.
+[2026-06-29 09:23:48.425] [warning] [ini_access ] [15952:16160] [280E7A: 198] failed to read ini file D:\nvluan3\GithubApp\ccsetup631\Data\burger_client.ini
+                                                                              Exception: couldn't open file
+                                                                              Code: 0x00000002 (2)
+[2026-06-29 09:23:48.428] [info   ] [files      ] [15952: 1500] [069D4A: 141] watch task termination for D:\nvluan3\GithubApp\ccsetup631\Data requested
+[2026-06-29 09:23:48.428] [info   ] [files      ] [15952: 1500] [069D4A: 157] watch task for D:\nvluan3\GithubApp\ccsetup631\Data gracefully terminated
+[2026-06-29 09:23:48.544] [info   ] [log_module ] [15952: 1500] [7D5D99:  29] LogModule is going to be destroyed.
+[2026-06-29 09:23:48.544] [info   ] [log_module ] [15952: 1500] [7D5D99:  30] =====================================================================================================================
